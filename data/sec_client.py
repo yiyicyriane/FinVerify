@@ -64,3 +64,30 @@ def get_json(url: str, cache_path: Path = None, retries: int = 3) -> dict:
 def companyfacts_cache_path(cik10: str) -> Path:
     """Local cache location for one company's Company Facts JSON."""
     return RAW_DIR / "companyfacts" / f"CIK{cik10}.json"
+
+
+def get_bytes(url: str, cache_path: Path = None, retries: int = 3) -> bytes:
+    """GET a raw document (e.g. a 10-K HTML) from SEC, with the same cache/retry rules as get_json."""
+    if cache_path is not None and cache_path.exists():
+        return cache_path.read_bytes()
+
+    last_err = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": user_agent()})
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                data = resp.read()
+            time.sleep(_SLEEP_SECONDS)
+            if cache_path is not None:
+                cache_path.parent.mkdir(parents=True, exist_ok=True)
+                cache_path.write_bytes(data)
+            return data
+        except (urllib.error.URLError, TimeoutError) as err:
+            last_err = err
+            time.sleep(1 + attempt)
+    raise RuntimeError(f"SEC request failed after {retries} attempts: {url} ({last_err})")
+
+
+def filing_html_cache_path(filing_id: str) -> Path:
+    """Local cache location for one filing's raw (Inline XBRL) HTML."""
+    return RAW_DIR / "filings" / f"{filing_id}.htm"

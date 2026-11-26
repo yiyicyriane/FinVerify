@@ -1,0 +1,604 @@
+{
+ "filing_id": "NKE_2025-05-31_10K",
+ "company": "NKE",
+ "cik": "0000320187",
+ "fiscal_year": 2025,
+ "accession_number": "0000320187-25-000047",
+ "period_end": "2025-05-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/320187/000032018725000047/nke-20250531.htm",
+ "statements": {
+  "balance_sheet": {
+   "heading_matched": "CONSOLIDATED BALANCE SHEETS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "MAY 31,",
+     ""
+    ],
+    [
+     "(In millions)",
+     "2025",
+     "2024"
+    ],
+    [
+     "ASSETS",
+     "",
+     ""
+    ],
+    [
+     "Current assets:",
+     "",
+     ""
+    ],
+    [
+     "Cash and equivalents",
+     "$7,464",
+     "$9,860"
+    ],
+    [
+     "Short-term investments",
+     "1,687",
+     "1,722"
+    ],
+    [
+     "Accounts receivable, net",
+     "4,717",
+     "4,427"
+    ],
+    [
+     "Inventories",
+     "7,489",
+     "7,519"
+    ],
+    [
+     "Prepaid expenses and other current assets",
+     "2,005",
+     "1,854"
+    ],
+    [
+     "Total current assets",
+     "23,362",
+     "25,382"
+    ],
+    [
+     "Property, plant and equipment, net",
+     "4,828",
+     "5,000"
+    ],
+    [
+     "Operating lease right-of-use assets, net",
+     "2,712",
+     "2,718"
+    ],
+    [
+     "Identifiable intangible assets, net",
+     "259",
+     "259"
+    ],
+    [
+     "Goodwill",
+     "240",
+     "240"
+    ],
+    [
+     "Deferred income taxes and other assets",
+     "5,178",
+     "4,511"
+    ],
+    [
+     "TOTAL ASSETS",
+     "$36,579",
+     "$38,110"
+    ],
+    [
+     "LIABILITIES AND SHAREHOLDERS' EQUITY",
+     "",
+     ""
+    ],
+    [
+     "Current liabilities:",
+     "",
+     ""
+    ],
+    [
+     "Current portion of long-term debt",
+     "$—",
+     "$1,000"
+    ],
+    [
+     "Notes payable",
+     "5",
+     "6"
+    ],
+    [
+     "Accounts payable",
+     "3,479",
+     "2,851"
+    ],
+    [
+     "Current portion of operating lease liabilities",
+     "502",
+     "477"
+    ],
+    [
+     "Accrued liabilities",
+     "5,911",
+     "5,725"
+    ],
+    [
+     "Income taxes payable",
+     "669",
+     "534"
+    ],
+    [
+     "Total current liabilities",
+     "10,566",
+     "10,593"
+    ],
+    [
+     "Long-term debt",
+     "7,961",
+     "7,903"
+    ],
+    [
+     "Operating lease liabilities",
+     "2,550",
+     "2,566"
+    ],
+    [
+     "Deferred income taxes and other liabilities",
+     "2,289",
+     "2,618"
+    ],
+    [
+     "Commitments and contingencies (Note 16)",
+     "",
+     ""
+    ],
+    [
+     "Redeemable preferred stock",
+     "—",
+     "—"
+    ],
+    [
+     "Shareholders' equity:",
+     "",
+     ""
+    ],
+    [
+     "Common stock at stated value:",
+     "",
+     ""
+    ],
+    [
+     "Class A convertible — 290 and 298 shares outstanding",
+     "—",
+     "—"
+    ],
+    [
+     "Class B — 1,186 and 1,205 shares outstanding",
+     "3",
+     "3"
+    ],
+    [
+     "Capital in excess of stated value",
+     "14,195",
+     "13,409"
+    ],
+    [
+     "Accumulated other comprehensive income (loss)",
+     "(258)",
+     "53"
+    ],
+    [
+     "Retained earnings (deficit)",
+     "(727)",
+     "965"
+    ],
+    [
+     "Total shareholders' equity",
+     "13,213",
+     "14,430"
+    ],
+    [
+     "TOTAL LIABILITIES AND SHAREHOLDERS' EQUITY",
+     "$36,579",
+     "$38,110"
+    ]
+   ]
+  },
+  "income_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF INCOME",
+   "unit_note": "(In millions, except per share data)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "YEAR ENDED MAY 31,",
+     "",
+     ""
+    ],
+    [
+     "(In millions, except per share data)",
+     "2025",
+     "2024",
+     "2023"
+    ],
+    [
+     "Revenues",
+     "$46,309",
+     "$51,362",
+     "$51,217"
+    ],
+    [
+     "Cost of sales",
+     "26,519",
+     "28,475",
+     "28,925"
+    ],
+    [
+     "Gross profit",
+     "19,790",
+     "22,887",
+     "22,292"
+    ],
+    [
+     "Demand creation expense",
+     "4,689",
+     "4,285",
+     "4,060"
+    ],
+    [
+     "Operating overhead expense",
+     "11,399",
+     "12,291",
+     "12,317"
+    ],
+    [
+     "Total selling and administrative expense",
+     "16,088",
+     "16,576",
+     "16,377"
+    ],
+    [
+     "Interest expense (income), net",
+     "(107)",
+     "(161)",
+     "(6)"
+    ],
+    [
+     "Other (income) expense, net",
+     "(76)",
+     "(228)",
+     "(280)"
+    ],
+    [
+     "Income before income taxes",
+     "3,885",
+     "6,700",
+     "6,201"
+    ],
+    [
+     "Income tax expense",
+     "666",
+     "1,000",
+     "1,131"
+    ],
+    [
+     "NET INCOME",
+     "$3,219",
+     "$5,700",
+     "$5,070"
+    ],
+    [
+     "Earnings per common share:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Basic",
+     "$2.17",
+     "$3.76",
+     "$3.27"
+    ],
+    [
+     "Diluted",
+     "$2.16",
+     "$3.73",
+     "$3.23"
+    ],
+    [
+     "Weighted average common shares outstanding:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Basic",
+     "1,484.9",
+     "1,517.6",
+     "1,551.6"
+    ],
+    [
+     "Diluted",
+     "1,487.6",
+     "1,529.7",
+     "1,569.8"
+    ]
+   ]
+  },
+  "cash_flow_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+   "unit_note": "(Dollars in millions)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "YEAR ENDED MAY 31,",
+     "",
+     ""
+    ],
+    [
+     "(Dollars in millions)",
+     "2025",
+     "2024",
+     "2023"
+    ],
+    [
+     "Cash provided (used) by operations:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Net income",
+     "$3,219",
+     "$5,700",
+     "$5,070"
+    ],
+    [
+     "Adjustments to reconcile net income to net cash provided (used) by operations:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Depreciation and amortization",
+     "775",
+     "796",
+     "703"
+    ],
+    [
+     "Deferred income taxes",
+     "(288)",
+     "(497)",
+     "(117)"
+    ],
+    [
+     "Stock-based compensation",
+     "709",
+     "804",
+     "755"
+    ],
+    [
+     "Impairment and other",
+     "33",
+     "48",
+     "156"
+    ],
+    [
+     "Net foreign currency adjustments",
+     "37",
+     "(138)",
+     "(213)"
+    ],
+    [
+     "Changes in certain working capital components and other assets and liabilities:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "(Increase) decrease in accounts receivable",
+     "(257)",
+     "(329)",
+     "489"
+    ],
+    [
+     "(Increase) decrease in inventories",
+     "120",
+     "908",
+     "(133)"
+    ],
+    [
+     "(Increase) decrease in prepaid expenses, operating lease right-of-use assets and other current and non-current assets",
+     "(224)",
+     "(260)",
+     "(644)"
+    ],
+    [
+     "Increase (decrease) in accounts payable, accrued liabilities, operating lease liabilities and other current and non-current liabilities",
+     "(426)",
+     "397",
+     "(225)"
+    ],
+    [
+     "Cash provided (used) by operations",
+     "3,698",
+     "7,429",
+     "5,841"
+    ],
+    [
+     "Cash provided (used) by investing activities:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Purchases of short-term investments",
+     "(3,234)",
+     "(4,767)",
+     "(6,059)"
+    ],
+    [
+     "Maturities of short-term investments",
+     "319",
+     "2,269",
+     "3,356"
+    ],
+    [
+     "Sales of short-term investments",
+     "3,062",
+     "4,219",
+     "4,184"
+    ],
+    [
+     "Additions to property, plant and equipment",
+     "(430)",
+     "(812)",
+     "(969)"
+    ],
+    [
+     "Other investing activities",
+     "8",
+     "(15)",
+     "52"
+    ],
+    [
+     "Cash provided (used) by investing activities",
+     "(275)",
+     "894",
+     "564"
+    ],
+    [
+     "Cash provided (used) by financing activities:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Increase (decrease) in notes payable, net",
+     "(1)",
+     "—",
+     "(4)"
+    ],
+    [
+     "Repayment of borrowings",
+     "(1,000)",
+     "—",
+     "(500)"
+    ],
+    [
+     "Proceeds from exercise of stock options and other stock issuances",
+     "551",
+     "667",
+     "651"
+    ],
+    [
+     "Repurchase of common stock",
+     "(2,985)",
+     "(4,250)",
+     "(5,480)"
+    ],
+    [
+     "Dividends — common and preferred",
+     "(2,300)",
+     "(2,169)",
+     "(2,012)"
+    ],
+    [
+     "Other financing activities",
+     "(85)",
+     "(136)",
+     "(102)"
+    ],
+    [
+     "Cash provided (used) by financing activities",
+     "(5,820)",
+     "(5,888)",
+     "(7,447)"
+    ],
+    [
+     "Effect of exchange rate changes on cash and equivalents",
+     "1",
+     "(16)",
+     "(91)"
+    ],
+    [
+     "Net increase (decrease) in cash and equivalents",
+     "(2,396)",
+     "2,419",
+     "(1,133)"
+    ],
+    [
+     "Cash and equivalents, beginning of year",
+     "9,860",
+     "7,441",
+     "8,574"
+    ],
+    [
+     "CASH AND EQUIVALENTS, END OF YEAR",
+     "$7,464",
+     "$9,860",
+     "$7,441"
+    ],
+    [
+     "Supplemental disclosure of cash flow information:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Cash paid during the year for:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Interest, net of capitalized interest",
+     "$389",
+     "$381",
+     "$347"
+    ],
+    [
+     "Income taxes",
+     "1,226",
+     "1,299",
+     "1,517"
+    ],
+    [
+     "Non-cash additions to property, plant and equipment",
+     "184",
+     "160",
+     "211"
+    ],
+    [
+     "Dividends declared and not paid",
+     "593",
+     "558",
+     "524"
+    ]
+   ]
+  }
+ }
+}

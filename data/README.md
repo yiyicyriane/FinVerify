@@ -25,6 +25,7 @@ delete that folder or pass `--refresh` to `data.fetch_xbrl` to re-download.
 | 2 | `data/fetch_xbrl.py` | `data/raw/companyfacts/CIK*.json` (cached Company Facts API responses) |
 | 3 | `data/match_ground_truth.py` | `data/ground_truth.json`: one record per (filing x ratio) |
 | 4 | `data/validate_gt.py` | known-answer tests, consistency checks, Apple POC printout |
+| 5 | `data/clean_filing.py` | `data/cleaned_filings/<filing_id>.json`: the three statements as visible text (agent input) |
 
 Formulas live only in `agent/calculator.py`, which Agent versions C and D import directly.
 
@@ -45,6 +46,46 @@ Formulas live only in `agent/calculator.py`, which Agent versions C and D import
 Excluded after testing: JNJ, PG (no `StockholdersEquity` tag), CAT (no `NetIncomeLoss`
 or `StockholdersEquity`), WMT (Total revenues and Net sales disagree, so "revenue" for
 gross margin is itself ambiguous). Backups that also match cleanly: PEP, INTC, COST.
+
+## Cleaned filings (agent input)
+
+```bash
+python -m data.clean_filing                  # download (cached in data/raw/filings/) + extract + check
+python -m data.clean_filing --only AAPL_2025-09-27_10K --preview   # print the text a prompt would see
+python -m data.clean_filing --check-only     # re-check existing data/cleaned_filings/*.json
+python -m unittest data.test_clean_filing    # offline tests on synthetic AAPL/MSFT/HD/NVDA layouts
+python -m data.cleaning_report               # -> docs/cleaning_verification.md (spot-check record)
+```
+
+Not part of `build_ground_truth` on purpose: ground truth never reads the HTML.
+
+Output per filing: `filing_id`, `company`, `cik`, `fiscal_year`, `accession_number`,
+`period_end`, `source_url`, and `statements.{balance_sheet, income_statement,
+cash_flow_statement}`, each with `heading_matched`, `unit_note`, `periods`, `rows`.
+`data.clean_filing.to_text(doc)` renders it as plain text for prompts.
+
+* Only the three statements are kept: no MD&A, no narrative with ready-made ratios.
+* Inline XBRL: `<ix:header>` and anything hidden are dropped with content; other `ix:*`
+  tags are unwrapped. Tables are located by heading text and structure only, never by
+  XBRL tag names.
+* Headings: "Consolidated" optional (MSFT "INCOME STATEMENTS"), "Statements of Earnings"
+  (HD), comprehensive income excluded. Candidate tables must have >= 5 rows, statement
+  keywords and >= 2 years in the header; a statement split over two tables is joined.
+* Headings that are sentences ("The following table ... Consolidated Statements of Income
+  expressed as a percentage of revenue." in NVDA MD&A) and "% of revenue" tables are rejected.
+* Workiva's self-closing empty cells (`<td />`) are kept as cells, `$` / `)` / `%` cells are
+  merged into their number, spanned year headers are moved onto the number column, and
+  adjacent columns that never hold values in the same row are merged ("$ | 10,605" vs one
+  colspan=2 cell). Result: one column per period. Only fully empty columns are dropped.
+* Checks, non-zero exit on failure: three statements found, `unit_note` set, >= 2 periods
+  newest first, every row = label + one column per period, no `us-gaap` / `ix:` / `xbrli` /
+  `dei:` / `contextref` / `unitref` / `xmlns`, and every ground-truth input in millions
+  (e.g. `147,957`) in its period's column: current in column 1, prior (beginning assets /
+  equity) in column 2. Row labels that look like ratios are printed as warnings.
+* `tables_joined` and `rowspan_cells` per statement flag what the manual check should look at.
+* `data.cleaning_report` writes `docs/cleaning_verification.md`: automated items ticked,
+  a GT-vs-cleaned reconciliation per filing (incl. the Apple POC), and unticked boxes for
+  what needs the original 10-K (row completeness, rows with empty cells, rowspan).
 
 ## Matching rules
 

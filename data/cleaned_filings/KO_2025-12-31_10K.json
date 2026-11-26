@@ -1,0 +1,615 @@
+{
+ "filing_id": "KO_2025-12-31_10K",
+ "company": "KO",
+ "cik": "0000021344",
+ "fiscal_year": 2025,
+ "accession_number": "0001628280-26-010047",
+ "period_end": "2025-12-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+ "statements": {
+  "balance_sheet": {
+   "heading_matched": "CONSOLIDATED BALANCE SHEETS",
+   "unit_note": "(In millions except par value)",
+   "periods": [
+    "2025",
+    "2024"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "December 31,",
+     "2025",
+     "2024"
+    ],
+    [
+     "ASSETS",
+     "",
+     ""
+    ],
+    [
+     "Current Assets",
+     "",
+     ""
+    ],
+    [
+     "Cash and cash equivalents",
+     "$10,270",
+     "$10,828"
+    ],
+    [
+     "Short-term investments",
+     "3,602",
+     "2,020"
+    ],
+    [
+     "Total Cash, Cash Equivalents and Short-Term Investments",
+     "13,872",
+     "12,848"
+    ],
+    [
+     "Marketable securities",
+     "1,934",
+     "1,723"
+    ],
+    [
+     "Trade accounts receivable, less allowances of $495 and $506, respectively",
+     "3,038",
+     "3,569"
+    ],
+    [
+     "Inventories",
+     "4,425",
+     "4,728"
+    ],
+    [
+     "Prepaid expenses and other current assets",
+     "2,433",
+     "2,998"
+    ],
+    [
+     "Assets held for sale",
+     "5,342",
+     "131"
+    ],
+    [
+     "Total Current Assets",
+     "31,044",
+     "25,997"
+    ],
+    [
+     "Equity method investments",
+     "20,235",
+     "18,087"
+    ],
+    [
+     "Deferred income tax assets",
+     "1,206",
+     "1,319"
+    ],
+    [
+     "Property, plant and equipment — net",
+     "9,613",
+     "10,303"
+    ],
+    [
+     "Trademarks with indefinite lives",
+     "12,531",
+     "13,301"
+    ],
+    [
+     "Goodwill",
+     "15,491",
+     "18,139"
+    ],
+    [
+     "Other noncurrent assets",
+     "14,696",
+     "13,403"
+    ],
+    [
+     "Total Assets",
+     "$104,816",
+     "$100,549"
+    ],
+    [
+     "LIABILITIES AND EQUITY",
+     "",
+     ""
+    ],
+    [
+     "Current Liabilities",
+     "",
+     ""
+    ],
+    [
+     "Accounts payable and accrued expenses",
+     "$14,813",
+     "$21,712"
+    ],
+    [
+     "Loans and notes payable",
+     "1,551",
+     "1,499"
+    ],
+    [
+     "Current maturities of long-term debt",
+     "1,822",
+     "648"
+    ],
+    [
+     "Accrued income taxes",
+     "525",
+     "1,387"
+    ],
+    [
+     "Liabilities held for sale",
+     "2,570",
+     "3"
+    ],
+    [
+     "Total Current Liabilities",
+     "21,281",
+     "25,249"
+    ],
+    [
+     "Long-term debt",
+     "42,119",
+     "42,375"
+    ],
+    [
+     "Other noncurrent liabilities",
+     "4,735",
+     "4,084"
+    ],
+    [
+     "Deferred income tax liabilities",
+     "2,406",
+     "2,469"
+    ],
+    [
+     "The Coca-Cola Company Shareowners’ Equity",
+     "",
+     ""
+    ],
+    [
+     "Common stock, $0.25 par value; authorized — 11,200 shares; issued — 7,040 shares",
+     "1,760",
+     "1,760"
+    ],
+    [
+     "Capital surplus",
+     "20,581",
+     "19,801"
+    ],
+    [
+     "Reinvested earnings",
+     "80,382",
+     "76,054"
+    ],
+    [
+     "Accumulated other comprehensive income (loss)",
+     "(14,131)",
+     "(16,843)"
+    ],
+    [
+     "Treasury stock, at cost — 2,738 and 2,738 shares, respectively",
+     "(56,423)",
+     "(55,916)"
+    ],
+    [
+     "Equity Attributable to Shareowners of The Coca-Cola Company",
+     "32,169",
+     "24,856"
+    ],
+    [
+     "Equity attributable to noncontrolling interests",
+     "2,106",
+     "1,516"
+    ],
+    [
+     "Total Equity",
+     "34,275",
+     "26,372"
+    ],
+    [
+     "Total Liabilities and Equity",
+     "$104,816",
+     "$100,549"
+    ]
+   ]
+  },
+  "income_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF INCOME",
+   "unit_note": "(In millions except per share data)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "Year Ended December 31,",
+     "2025",
+     "2024",
+     "2023"
+    ],
+    [
+     "Net Operating Revenues",
+     "$47,941",
+     "$47,061",
+     "$45,754"
+    ],
+    [
+     "Cost of goods sold",
+     "18,397",
+     "18,324",
+     "18,520"
+    ],
+    [
+     "Gross Profit",
+     "29,544",
+     "28,737",
+     "27,234"
+    ],
+    [
+     "Selling, general and administrative expenses",
+     "14,521",
+     "14,582",
+     "13,972"
+    ],
+    [
+     "Other operating charges",
+     "1,261",
+     "4,163",
+     "1,951"
+    ],
+    [
+     "Operating Income",
+     "13,762",
+     "9,992",
+     "11,311"
+    ],
+    [
+     "Interest income",
+     "786",
+     "988",
+     "907"
+    ],
+    [
+     "Interest expense",
+     "1,654",
+     "1,656",
+     "1,527"
+    ],
+    [
+     "Equity income (loss) — net",
+     "2,031",
+     "1,770",
+     "1,691"
+    ],
+    [
+     "Other income (loss) — net",
+     "1,073",
+     "1,992",
+     "570"
+    ],
+    [
+     "Income Before Income Taxes",
+     "15,998",
+     "13,086",
+     "12,952"
+    ],
+    [
+     "Income taxes",
+     "2,861",
+     "2,437",
+     "2,249"
+    ],
+    [
+     "Consolidated Net Income",
+     "13,137",
+     "10,649",
+     "10,703"
+    ],
+    [
+     "Less: Net income (loss) attributable to noncontrolling interests",
+     "30",
+     "18",
+     "(11)"
+    ],
+    [
+     "Net Income Attributable to Shareowners of The Coca-Cola Company",
+     "$13,107",
+     "$10,631",
+     "$10,714"
+    ],
+    [
+     "Basic Net Income Per Share1",
+     "$3.05",
+     "$2.47",
+     "$2.48"
+    ],
+    [
+     "Diluted Net Income Per Share1",
+     "$3.04",
+     "$2.46",
+     "$2.47"
+    ],
+    [
+     "Average Shares Outstanding — Basic",
+     "4,303",
+     "4,309",
+     "4,323"
+    ],
+    [
+     "Effect of dilutive securities",
+     "10",
+     "11",
+     "16"
+    ],
+    [
+     "Average Shares Outstanding — Diluted",
+     "4,313",
+     "4,320",
+     "4,339"
+    ]
+   ]
+  },
+  "cash_flow_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "Year Ended December 31,",
+     "2025",
+     "2024",
+     "2023"
+    ],
+    [
+     "Operating Activities",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Consolidated net income",
+     "$13,137",
+     "$10,649",
+     "$10,703"
+    ],
+    [
+     "Adjustments to reconcile consolidated net income to net cash provided by operating activities:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Depreciation and amortization",
+     "1,050",
+     "1,075",
+     "1,128"
+    ],
+    [
+     "Stock-based compensation expense",
+     "279",
+     "286",
+     "254"
+    ],
+    [
+     "Deferred income taxes",
+     "517",
+     "(11)",
+     "(2)"
+    ],
+    [
+     "Equity (income) loss — net of dividends",
+     "(1,038)",
+     "(802)",
+     "(1,019)"
+    ],
+    [
+     "Foreign currency adjustments",
+     "191",
+     "(110)",
+     "175"
+    ],
+    [
+     "Significant (gains) losses — net",
+     "(713)",
+     "(1,737)",
+     "(492)"
+    ],
+    [
+     "Other operating charges",
+     "1,052",
+     "4,000",
+     "1,741"
+    ],
+    [
+     "Other items",
+     "141",
+     "(311)",
+     "(43)"
+    ],
+    [
+     "Net change in operating assets and liabilities",
+     "(7,208)",
+     "(6,234)",
+     "(846)"
+    ],
+    [
+     "Net Cash Provided by Operating Activities",
+     "7,408",
+     "6,805",
+     "11,599"
+    ],
+    [
+     "Investing Activities",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Purchases of investments",
+     "(6,160)",
+     "(5,640)",
+     "(6,698)"
+    ],
+    [
+     "Proceeds from disposals of investments",
+     "4,665",
+     "6,589",
+     "4,354"
+    ],
+    [
+     "Acquisitions of businesses, equity method investments and nonmarketable securities",
+     "(461)",
+     "(315)",
+     "(62)"
+    ],
+    [
+     "Proceeds from disposals of businesses, equity method investments and nonmarketable securities",
+     "3,567",
+     "3,485",
+     "430"
+    ],
+    [
+     "Purchases of property, plant and equipment",
+     "(2,112)",
+     "(2,064)",
+     "(1,852)"
+    ],
+    [
+     "Proceeds from disposals of property, plant and equipment",
+     "13",
+     "40",
+     "74"
+    ],
+    [
+     "Collateral (paid) received associated with hedging activities — net",
+     "330",
+     "235",
+     "366"
+    ],
+    [
+     "Other investing activities",
+     "91",
+     "194",
+     "39"
+    ],
+    [
+     "Net Cash Provided by (Used in) Investing Activities",
+     "(67)",
+     "2,524",
+     "(3,349)"
+    ],
+    [
+     "Financing Activities",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Issuances of loans, notes payable and long-term debt",
+     "4,980",
+     "12,061",
+     "6,891"
+    ],
+    [
+     "Payments of loans, notes payable and long-term debt",
+     "(4,967)",
+     "(9,533)",
+     "(5,034)"
+    ],
+    [
+     "Issuances of stock",
+     "313",
+     "747",
+     "539"
+    ],
+    [
+     "Purchases of stock for treasury",
+     "(746)",
+     "(1,795)",
+     "(2,289)"
+    ],
+    [
+     "Dividends",
+     "(8,779)",
+     "(8,359)",
+     "(7,952)"
+    ],
+    [
+     "Proceeds from sale of a noncontrolling interest",
+     "1,338",
+     "—",
+     "—"
+    ],
+    [
+     "Other financing activities",
+     "(279)",
+     "(31)",
+     "(465)"
+    ],
+    [
+     "Net Cash Provided by (Used in) Financing Activities",
+     "(8,140)",
+     "(6,910)",
+     "(8,310)"
+    ],
+    [
+     "Effect of Exchange Rate Changes on Cash, Cash Equivalents, Restricted Cash and Restricted Cash Equivalents",
+     "321",
+     "(623)",
+     "(73)"
+    ],
+    [
+     "Cash, Cash Equivalents, Restricted Cash and Restricted Cash Equivalents",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Net increase (decrease) in cash, cash equivalents, restricted cash and restricted cash equivalents during the year",
+     "(478)",
+     "1,796",
+     "(133)"
+    ],
+    [
+     "Cash, cash equivalents, restricted cash and restricted cash equivalents at beginning of year",
+     "11,488",
+     "9,692",
+     "9,825"
+    ],
+    [
+     "Cash, Cash Equivalents, Restricted Cash and Restricted Cash Equivalents at End of Year",
+     "11,010",
+     "11,488",
+     "9,692"
+    ],
+    [
+     "Less: Restricted cash and restricted cash equivalents at end of year",
+     "740",
+     "660",
+     "326"
+    ],
+    [
+     "Cash and Cash Equivalents at End of Year",
+     "$10,270",
+     "$10,828",
+     "$9,366"
+    ]
+   ]
+  }
+ }
+}

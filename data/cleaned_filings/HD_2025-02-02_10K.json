@@ -1,0 +1,610 @@
+{
+ "filing_id": "HD_2025-02-02_10K",
+ "company": "HD",
+ "cik": "0000354950",
+ "fiscal_year": 2024,
+ "accession_number": "0000354950-25-000085",
+ "period_end": "2025-02-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/354950/000035495025000085/hd-20250202.htm",
+ "statements": {
+  "balance_sheet": {
+   "heading_matched": "CONSOLIDATED BALANCE SHEETS",
+   "unit_note": "in millions, except per share data",
+   "periods": [
+    "2025",
+    "2024"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "in millions, except per share data",
+     "February 2, 2025",
+     "January 28, 2024"
+    ],
+    [
+     "Assets",
+     "",
+     ""
+    ],
+    [
+     "Current assets:",
+     "",
+     ""
+    ],
+    [
+     "Cash and cash equivalents",
+     "$1,659",
+     "$3,760"
+    ],
+    [
+     "Receivables, net",
+     "4,903",
+     "3,328"
+    ],
+    [
+     "Merchandise inventories",
+     "23,451",
+     "20,976"
+    ],
+    [
+     "Other current assets",
+     "1,670",
+     "1,711"
+    ],
+    [
+     "Total current assets",
+     "31,683",
+     "29,775"
+    ],
+    [
+     "Net property and equipment",
+     "26,702",
+     "26,154"
+    ],
+    [
+     "Operating lease right-of-use assets",
+     "8,592",
+     "7,884"
+    ],
+    [
+     "Goodwill",
+     "19,475",
+     "8,455"
+    ],
+    [
+     "Intangible assets, net",
+     "8,983",
+     "3,606"
+    ],
+    [
+     "Other assets",
+     "684",
+     "656"
+    ],
+    [
+     "Total assets",
+     "$96,119",
+     "$76,530"
+    ],
+    [
+     "Liabilities and Stockholders’ Equity",
+     "",
+     ""
+    ],
+    [
+     "Current liabilities:",
+     "",
+     ""
+    ],
+    [
+     "Short-term debt",
+     "$316",
+     "$—"
+    ],
+    [
+     "Accounts payable",
+     "11,938",
+     "10,037"
+    ],
+    [
+     "Accrued salaries and related expenses",
+     "2,315",
+     "2,096"
+    ],
+    [
+     "Sales taxes payable",
+     "628",
+     "449"
+    ],
+    [
+     "Deferred revenue",
+     "2,610",
+     "2,762"
+    ],
+    [
+     "Income taxes payable",
+     "832",
+     "28"
+    ],
+    [
+     "Current installments of long-term debt",
+     "4,582",
+     "1,368"
+    ],
+    [
+     "Current operating lease liabilities",
+     "1,274",
+     "1,050"
+    ],
+    [
+     "Other accrued expenses",
+     "4,166",
+     "4,225"
+    ],
+    [
+     "Total current liabilities",
+     "28,661",
+     "22,015"
+    ],
+    [
+     "Long-term debt, excluding current installments",
+     "48,485",
+     "42,743"
+    ],
+    [
+     "Long-term operating lease liabilities",
+     "7,633",
+     "7,082"
+    ],
+    [
+     "Deferred income taxes",
+     "1,962",
+     "863"
+    ],
+    [
+     "Other long-term liabilities",
+     "2,738",
+     "2,783"
+    ],
+    [
+     "Total liabilities",
+     "89,479",
+     "75,486"
+    ],
+    [
+     "Commitments and contingencies (Note 12)",
+     "",
+     ""
+    ],
+    [
+     "Common stock, par value $0.05; authorized: 10,000 shares; issued: 1,800 shares at February 2, 2025 and 1,796 shares at January 28, 2024; outstanding: 994 shares at February 2, 2025 and 992 shares at January 28, 2024",
+     "90",
+     "90"
+    ],
+    [
+     "Paid-in capital",
+     "14,117",
+     "13,147"
+    ],
+    [
+     "Retained earnings",
+     "89,533",
+     "83,656"
+    ],
+    [
+     "Accumulated other comprehensive loss",
+     "(1,129)",
+     "(477)"
+    ],
+    [
+     "Treasury stock, at cost, 806 shares at February 2, 2025 and 804 shares at January 28, 2024",
+     "(95,971)",
+     "(95,372)"
+    ],
+    [
+     "Total stockholders’ equity",
+     "6,640",
+     "1,044"
+    ],
+    [
+     "Total liabilities and stockholders’ equity",
+     "$96,119",
+     "$76,530"
+    ]
+   ]
+  },
+  "income_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF EARNINGS",
+   "unit_note": "in millions, except per share data",
+   "periods": [
+    "2024",
+    "2023",
+    "2022"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 1,
+   "rows": [
+    [
+     "in millions, except per share data",
+     "Fiscal",
+     "Fiscal",
+     "Fiscal"
+    ],
+    [
+     "in millions, except per share data",
+     "2024",
+     "2023",
+     "2022"
+    ],
+    [
+     "Net sales",
+     "$159,514",
+     "$152,669",
+     "$157,403"
+    ],
+    [
+     "Cost of sales",
+     "106,206",
+     "101,709",
+     "104,625"
+    ],
+    [
+     "Gross profit",
+     "53,308",
+     "50,960",
+     "52,778"
+    ],
+    [
+     "Operating expenses:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Selling, general and administrative",
+     "28,748",
+     "26,598",
+     "26,284"
+    ],
+    [
+     "Depreciation and amortization",
+     "3,034",
+     "2,673",
+     "2,455"
+    ],
+    [
+     "Total operating expenses",
+     "31,782",
+     "29,271",
+     "28,739"
+    ],
+    [
+     "Operating income",
+     "21,526",
+     "21,689",
+     "24,039"
+    ],
+    [
+     "Interest and other (income) expense:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Interest income and other, net",
+     "(201)",
+     "(178)",
+     "(55)"
+    ],
+    [
+     "Interest expense",
+     "2,321",
+     "1,943",
+     "1,617"
+    ],
+    [
+     "Interest and other, net",
+     "2,120",
+     "1,765",
+     "1,562"
+    ],
+    [
+     "Earnings before provision for income taxes",
+     "19,406",
+     "19,924",
+     "22,477"
+    ],
+    [
+     "Provision for income taxes",
+     "4,600",
+     "4,781",
+     "5,372"
+    ],
+    [
+     "Net earnings",
+     "$14,806",
+     "$15,143",
+     "$17,105"
+    ],
+    [
+     "Basic weighted average common shares",
+     "990",
+     "999",
+     "1,022"
+    ],
+    [
+     "Basic earnings per share",
+     "$14.96",
+     "$15.16",
+     "$16.74"
+    ],
+    [
+     "Diluted weighted average common shares",
+     "993",
+     "1,002",
+     "1,025"
+    ],
+    [
+     "Diluted earnings per share",
+     "$14.91",
+     "$15.11",
+     "$16.69"
+    ]
+   ]
+  },
+  "cash_flow_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+   "unit_note": "in millions",
+   "periods": [
+    "2024",
+    "2023",
+    "2022"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "Fiscal",
+     "Fiscal",
+     "Fiscal"
+    ],
+    [
+     "in millions",
+     "2024",
+     "2023",
+     "2022"
+    ],
+    [
+     "Cash Flows from Operating Activities:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Net earnings",
+     "$14,806",
+     "$15,143",
+     "$17,105"
+    ],
+    [
+     "Reconciliation of net earnings to net cash provided by operating activities:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Depreciation and amortization, excluding amortization of intangible assets",
+     "3,336",
+     "3,061",
+     "2,796"
+    ],
+    [
+     "Intangible asset amortization",
+     "425",
+     "186",
+     "179"
+    ],
+    [
+     "Stock-based compensation expense",
+     "442",
+     "380",
+     "366"
+    ],
+    [
+     "Changes in receivables, net",
+     "174",
+     "134",
+     "111"
+    ],
+    [
+     "Changes in merchandise inventories",
+     "(743)",
+     "4,137",
+     "(2,830)"
+    ],
+    [
+     "Changes in other current assets",
+     "86",
+     "(184)",
+     "(311)"
+    ],
+    [
+     "Changes in accounts payable and accrued expenses",
+     "518",
+     "(1,411)",
+     "(2,577)"
+    ],
+    [
+     "Changes in deferred revenue",
+     "(165)",
+     "(318)",
+     "(526)"
+    ],
+    [
+     "Changes in income taxes payable",
+     "809",
+     "(25)",
+     "(107)"
+    ],
+    [
+     "Changes in deferred income taxes",
+     "15",
+     "(245)",
+     "138"
+    ],
+    [
+     "Other operating activities",
+     "107",
+     "314",
+     "271"
+    ],
+    [
+     "Net cash provided by operating activities",
+     "19,810",
+     "21,172",
+     "14,615"
+    ],
+    [
+     "Cash Flows from Investing Activities:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Capital expenditures",
+     "(3,485)",
+     "(3,226)",
+     "(3,119)"
+    ],
+    [
+     "Payments for businesses acquired, net",
+     "(17,644)",
+     "(1,514)",
+     "—"
+    ],
+    [
+     "Other investing activities",
+     "98",
+     "11",
+     "(21)"
+    ],
+    [
+     "Net cash used in investing activities",
+     "(21,031)",
+     "(4,729)",
+     "(3,140)"
+    ],
+    [
+     "Cash Flows from Financing Activities:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Proceeds from (repayments of) short-term debt, net",
+     "316",
+     "—",
+     "(1,035)"
+    ],
+    [
+     "Proceeds from long-term debt, net of discounts",
+     "10,010",
+     "1,995",
+     "6,942"
+    ],
+    [
+     "Repayments of long-term debt",
+     "(1,536)",
+     "(1,271)",
+     "(2,491)"
+    ],
+    [
+     "Repurchases of common stock",
+     "(649)",
+     "(7,951)",
+     "(6,696)"
+    ],
+    [
+     "Proceeds from sales of common stock",
+     "395",
+     "323",
+     "264"
+    ],
+    [
+     "Cash dividends",
+     "(8,929)",
+     "(8,383)",
+     "(7,789)"
+    ],
+    [
+     "Other financing activities",
+     "(301)",
+     "(156)",
+     "(188)"
+    ],
+    [
+     "Net cash used in financing activities",
+     "(694)",
+     "(15,443)",
+     "(10,993)"
+    ],
+    [
+     "Change in cash and cash equivalents",
+     "(1,915)",
+     "1,000",
+     "482"
+    ],
+    [
+     "Effect of exchange rate changes on cash and cash equivalents",
+     "(186)",
+     "3",
+     "(68)"
+    ],
+    [
+     "Cash and cash equivalents at beginning of year",
+     "3,760",
+     "2,757",
+     "2,343"
+    ],
+    [
+     "Cash and cash equivalents at end of year",
+     "$1,659",
+     "$3,760",
+     "$2,757"
+    ],
+    [
+     "Supplemental Disclosures:",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Cash paid for income taxes",
+     "$3,653",
+     "$5,023",
+     "$5,435"
+    ],
+    [
+     "Cash paid for interest, net of interest capitalized",
+     "2,199",
+     "1,809",
+     "1,449"
+    ],
+    [
+     "Non-cash capital expenditures",
+     "250",
+     "364",
+     "351"
+    ],
+    [
+     "Non-cash acquisition purchase consideration (Note 13)",
+     "321",
+     "—",
+     "—"
+    ]
+   ]
+  }
+ }
+}

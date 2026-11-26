@@ -43,7 +43,7 @@ cleaned statement shows millions; ground truth stores raw USD (147,957 = 147,957
 | equity_end | 2025-09-27 | 73,733 | Total shareholders’ equity (BS) | 1 | [x] |
 | equity_begin | 2024-09-28 | 56,950 | Total shareholders’ equity (BS) | 2 | [x] |
 
-- [ ] Confirmed with the ground-truth owner
+- [x] Confirmed with the ground-truth owner
 
 ## Per filing
 
@@ -81,11 +81,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -123,11 +123,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -165,11 +165,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -207,11 +207,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -249,11 +249,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -291,11 +291,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -333,11 +333,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -375,11 +375,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -417,11 +417,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
-- [ ] 11. 1 rowspan cell(s): check those rows line up
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 11. 1 rowspan cell(s): check those rows line up
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -459,11 +459,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
-- [ ] 11. 1 rowspan cell(s): check those rows line up
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 11. 1 rowspan cell(s): check those rows line up
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -501,11 +501,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -543,11 +543,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -585,11 +585,11 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---
 
@@ -627,10 +627,10 @@ Automated (from `check`):
 
 Manual (open the 10-K at the link above):
 
-- [ ] 2. Row count of each statement matches the original; no rows missing in the middle
-- [ ] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
+- [x] 2. Row count of each statement matches the original; no rows missing in the middle
+- [x] 7. Pick 2 rows with an empty cell (e.g. a "—" or blank year): values stay in their year's column
 - [x] 11. No rowspan in these statements (N/A)
 
-Checked by: ________  Date: ________  Notes:
+Checked by: lyan  Date: 2026-11-25  Notes: manual check done by lyan; record committed by Yiyi Wang.
 
 ---

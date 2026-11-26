@@ -1,0 +1,2326 @@
+[
+  {
+    "filing_id": "AAPL_2026-09-26_10K",
+    "company": "AAPL",
+    "cik": "0000320193",
+    "fiscal_year": 2026,
+    "accession_number": "0000320193-26-000026",
+    "period_end": "2026-09-26",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 173857000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-09-26",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 169915000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-09-26",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.0231998352117235,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "AAPL_2026-09-26_10K",
+    "company": "AAPL",
+    "cik": "0000320193",
+    "fiscal_year": 2026,
+    "accession_number": "0000320193-26-000026",
+    "period_end": "2026-09-26",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "value": 478834000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-09-28",
+        "period_end": "2026-09-26",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfGoodsAndServicesSold",
+        "value": 245232000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-09-28",
+        "period_end": "2026-09-26",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.48785591666423017,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "AAPL_2026-09-26_10K",
+    "company": "AAPL",
+    "cik": "0000320193",
+    "fiscal_year": 2026,
+    "accession_number": "0000320193-26-000026",
+    "period_end": "2026-09-26",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 132175000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-09-28",
+        "period_end": "2026-09-26",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 359241000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-09-27",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 404548000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-09-26",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.34610343956249695,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "AAPL_2026-09-26_10K",
+    "company": "AAPL",
+    "cik": "0000320193",
+    "fiscal_year": 2026,
+    "accession_number": "0000320193-26-000026",
+    "period_end": "2026-09-26",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 132175000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-09-28",
+        "period_end": "2026-09-26",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 73733000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-09-27",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 112093000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-09-26",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.4225673479491567,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "AAPL_2025-09-27_10K",
+    "company": "AAPL",
+    "cik": "0000320193",
+    "fiscal_year": 2025,
+    "accession_number": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 147957000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-09-27",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 165631000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-09-27",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.8932929222186667,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "AAPL_2025-09-27_10K",
+    "company": "AAPL",
+    "cik": "0000320193",
+    "fiscal_year": 2025,
+    "accession_number": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "value": 416161000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-09-29",
+        "period_end": "2025-09-27",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfGoodsAndServicesSold",
+        "value": 220960000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-09-29",
+        "period_end": "2025-09-27",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.4690516410716045,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "AAPL_2025-09-27_10K",
+    "company": "AAPL",
+    "cik": "0000320193",
+    "fiscal_year": 2025,
+    "accession_number": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 112010000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-09-29",
+        "period_end": "2025-09-27",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 364980000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-09-28",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 359241000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-09-27",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.3093254683307996,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "AAPL_2025-09-27_10K",
+    "company": "AAPL",
+    "cik": "0000320193",
+    "fiscal_year": 2025,
+    "accession_number": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 112010000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-09-29",
+        "period_end": "2025-09-27",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 56950000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-09-28",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 73733000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-09-27",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.7142244974480232,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "MSFT_2026-06-30_10K",
+    "company": "MSFT",
+    "cik": "0000789019",
+    "fiscal_year": 2026,
+    "accession_number": "0001193125-26-323660",
+    "period_end": "2026-06-30",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 207710000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-06-30",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 168825000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-06-30",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.2303272619576484,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "MSFT_2026-06-30_10K",
+    "company": "MSFT",
+    "cik": "0000789019",
+    "fiscal_year": 2026,
+    "accession_number": "0001193125-26-323660",
+    "period_end": "2026-06-30",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "value": 331839000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-07-01",
+        "period_end": "2026-06-30",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfGoodsAndServicesSold",
+        "value": 106374000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-07-01",
+        "period_end": "2026-06-30",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.6794409337058032,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "MSFT_2026-06-30_10K",
+    "company": "MSFT",
+    "cik": "0000789019",
+    "fiscal_year": 2026,
+    "accession_number": "0001193125-26-323660",
+    "period_end": "2026-06-30",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 133749000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-07-01",
+        "period_end": "2026-06-30",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 619003000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-06-30",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 758376000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-06-30",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.19420798487562246,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "MSFT_2026-06-30_10K",
+    "company": "MSFT",
+    "cik": "0000789019",
+    "fiscal_year": 2026,
+    "accession_number": "0001193125-26-323660",
+    "period_end": "2026-06-30",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 133749000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-07-01",
+        "period_end": "2026-06-30",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 343479000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-06-30",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 442387000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-06-30",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.3403862745048138,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "MSFT_2025-06-30_10K",
+    "company": "MSFT",
+    "cik": "0000789019",
+    "fiscal_year": 2025,
+    "accession_number": "0000950170-25-100235",
+    "period_end": "2025-06-30",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 191131000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-06-30",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 141218000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-06-30",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.3534464445042416,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "MSFT_2025-06-30_10K",
+    "company": "MSFT",
+    "cik": "0000789019",
+    "fiscal_year": 2025,
+    "accession_number": "0000950170-25-100235",
+    "period_end": "2025-06-30",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "value": 281724000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfGoodsAndServicesSold",
+        "value": 87831000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.6882374238616519,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "MSFT_2025-06-30_10K",
+    "company": "MSFT",
+    "cik": "0000789019",
+    "fiscal_year": 2025,
+    "accession_number": "0000950170-25-100235",
+    "period_end": "2025-06-30",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 101832000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 512163000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-06-30",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 619003000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-06-30",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.18004784443662558,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "MSFT_2025-06-30_10K",
+    "company": "MSFT",
+    "cik": "0000789019",
+    "fiscal_year": 2025,
+    "accession_number": "0000950170-25-100235",
+    "period_end": "2025-06-30",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 101832000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-07-01",
+        "period_end": "2025-06-30",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 268477000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-06-30",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 343479000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-06-30",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.3328082411153743,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NVDA_2026-01-25_10K",
+    "company": "NVDA",
+    "cik": "0001045810",
+    "fiscal_year": 2026,
+    "accession_number": "0001045810-26-000021",
+    "period_end": "2026-01-25",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 125605000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-01-25",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 32163000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-01-25",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 3.905263812455306,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NVDA_2026-01-25_10K",
+    "company": "NVDA",
+    "cik": "0001045810",
+    "fiscal_year": 2026,
+    "accession_number": "0001045810-26-000021",
+    "period_end": "2026-01-25",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "Revenues",
+        "value": 215938000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-27",
+        "period_end": "2026-01-25",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfRevenue",
+        "value": 62475000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-27",
+        "period_end": "2026-01-25",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.7106808435754708,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NVDA_2026-01-25_10K",
+    "company": "NVDA",
+    "cik": "0001045810",
+    "fiscal_year": 2026,
+    "accession_number": "0001045810-26-000021",
+    "period_end": "2026-01-25",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 120067000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-27",
+        "period_end": "2026-01-25",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 111601000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-01-26",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 206803000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-01-25",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.7541802238665344,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NVDA_2026-01-25_10K",
+    "company": "NVDA",
+    "cik": "0001045810",
+    "fiscal_year": 2026,
+    "accession_number": "0001045810-26-000021",
+    "period_end": "2026-01-25",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 120067000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-27",
+        "period_end": "2026-01-25",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 79327000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-01-26",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 157293000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-01-25",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.014850815653791,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NVDA_2025-01-26_10K",
+    "company": "NVDA",
+    "cik": "0001045810",
+    "fiscal_year": 2025,
+    "accession_number": "0001045810-25-000023",
+    "period_end": "2025-01-26",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 80126000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-01-26",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 18047000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-01-26",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 4.439851498864077,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NVDA_2025-01-26_10K",
+    "company": "NVDA",
+    "cik": "0001045810",
+    "fiscal_year": 2025,
+    "accession_number": "0001045810-25-000023",
+    "period_end": "2025-01-26",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "Revenues",
+        "value": 130497000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-29",
+        "period_end": "2025-01-26",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfRevenue",
+        "value": 32639000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-29",
+        "period_end": "2025-01-26",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.7498869705816992,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NVDA_2025-01-26_10K",
+    "company": "NVDA",
+    "cik": "0001045810",
+    "fiscal_year": 2025,
+    "accession_number": "0001045810-25-000023",
+    "period_end": "2025-01-26",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 72880000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-29",
+        "period_end": "2025-01-26",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 65728000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-01-28",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 111601000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-01-26",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.8219749730726502,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NVDA_2025-01-26_10K",
+    "company": "NVDA",
+    "cik": "0001045810",
+    "fiscal_year": 2025,
+    "accession_number": "0001045810-25-000023",
+    "period_end": "2025-01-26",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 72880000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-29",
+        "period_end": "2025-01-26",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 42978000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-01-28",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 79327000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-01-26",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.1917746617063898,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "KO_2025-12-31_10K",
+    "company": "KO",
+    "cik": "0000021344",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-010047",
+    "period_end": "2025-12-31",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 31044000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 21281000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.4587660354306657,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "KO_2025-12-31_10K",
+    "company": "KO",
+    "cik": "0000021344",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-010047",
+    "period_end": "2025-12-31",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "Revenues",
+        "value": 47941000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfGoodsAndServicesSold",
+        "value": 18397000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.6162574831563797,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "KO_2025-12-31_10K",
+    "company": "KO",
+    "cik": "0000021344",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-010047",
+    "period_end": "2025-12-31",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 13107000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 100549000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 104816000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.12764589876561244,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "KO_2025-12-31_10K",
+    "company": "KO",
+    "cik": "0000021344",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-010047",
+    "period_end": "2025-12-31",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 13107000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 24856000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 32169000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.45969311705392374,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "KO_2024-12-31_10K",
+    "company": "KO",
+    "cik": "0000021344",
+    "fiscal_year": 2024,
+    "accession_number": "0000021344-25-000011",
+    "period_end": "2024-12-31",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 25997000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 25249000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.0296249356410154,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "KO_2024-12-31_10K",
+    "company": "KO",
+    "cik": "0000021344",
+    "fiscal_year": 2024,
+    "accession_number": "0000021344-25-000011",
+    "period_end": "2024-12-31",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "Revenues",
+        "value": 47061000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfGoodsAndServicesSold",
+        "value": 18324000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.6106330082233696,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "KO_2024-12-31_10K",
+    "company": "KO",
+    "cik": "0000021344",
+    "fiscal_year": 2024,
+    "accession_number": "0000021344-25-000011",
+    "period_end": "2024-12-31",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 10631000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 97703000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2023-12-31",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 100549000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.10724734176704397,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "KO_2024-12-31_10K",
+    "company": "KO",
+    "cik": "0000021344",
+    "fiscal_year": 2024,
+    "accession_number": "0000021344-25-000011",
+    "period_end": "2024-12-31",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 10631000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 25941000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2023-12-31",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 24856000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.4185680256708073,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "HD_2026-02-01_10K",
+    "company": "HD",
+    "cik": "0000354950",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-019436",
+    "period_end": "2026-02-01",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 34391000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-02-01",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 32424000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-02-01",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.06066493955095,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "HD_2026-02-01_10K",
+    "company": "HD",
+    "cik": "0000354950",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-019436",
+    "period_end": "2026-02-01",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "value": 164683000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-02-03",
+        "period_end": "2026-02-01",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfRevenue",
+        "value": 109818000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-02-03",
+        "period_end": "2026-02-01",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.33315521334928316,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "HD_2026-02-01_10K",
+    "company": "HD",
+    "cik": "0000354950",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-019436",
+    "period_end": "2026-02-01",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 14156000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-02-03",
+        "period_end": "2026-02-01",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 96119000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-02-02",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 105095000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-02-01",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.1407059150953711,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "HD_2026-02-01_10K",
+    "company": "HD",
+    "cik": "0000354950",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-019436",
+    "period_end": "2026-02-01",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 14156000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-02-03",
+        "period_end": "2026-02-01",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 6640000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-02-02",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 12813000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-02-01",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.4554053359379016,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "HD_2025-02-02_10K",
+    "company": "HD",
+    "cik": "0000354950",
+    "fiscal_year": 2024,
+    "accession_number": "0000354950-25-000085",
+    "period_end": "2025-02-02",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 31683000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-02-02",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 28661000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-02-02",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.1054394473326123,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "HD_2025-02-02_10K",
+    "company": "HD",
+    "cik": "0000354950",
+    "fiscal_year": 2024,
+    "accession_number": "0000354950-25-000085",
+    "period_end": "2025-02-02",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "value": 159514000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-29",
+        "period_end": "2025-02-02",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfRevenue",
+        "value": 106206000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-29",
+        "period_end": "2025-02-02",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.3341901024361498,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "HD_2025-02-02_10K",
+    "company": "HD",
+    "cik": "0000354950",
+    "fiscal_year": 2024,
+    "accession_number": "0000354950-25-000085",
+    "period_end": "2025-02-02",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 14806000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-29",
+        "period_end": "2025-02-02",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 76530000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-01-28",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 96119000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-02-02",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.17151561839338775,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "HD_2025-02-02_10K",
+    "company": "HD",
+    "cik": "0000354950",
+    "fiscal_year": 2024,
+    "accession_number": "0000354950-25-000085",
+    "period_end": "2025-02-02",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 14806000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-29",
+        "period_end": "2025-02-02",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 1044000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-01-28",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 6640000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-02-02",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 3.853722019781364,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "TSLA_2025-12-31_10K",
+    "company": "TSLA",
+    "cik": "0001318605",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-003952",
+    "period_end": "2025-12-31",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 68642000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 31714000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 2.1644068865485275,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "TSLA_2025-12-31_10K",
+    "company": "TSLA",
+    "cik": "0001318605",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-003952",
+    "period_end": "2025-12-31",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "Revenues",
+        "value": 94827000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfRevenue",
+        "value": 77733000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.18026511436616155,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "TSLA_2025-12-31_10K",
+    "company": "TSLA",
+    "cik": "0001318605",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-003952",
+    "period_end": "2025-12-31",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 3794000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 122070000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 137806000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.02919854084255568,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "TSLA_2025-12-31_10K",
+    "company": "TSLA",
+    "cik": "0001318605",
+    "fiscal_year": 2025,
+    "accession_number": "0001628280-26-003952",
+    "period_end": "2025-12-31",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 3794000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 72913000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 82137000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-12-31",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.04893905191873589,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "TSLA_2024-12-31_10K",
+    "company": "TSLA",
+    "cik": "0001318605",
+    "fiscal_year": 2024,
+    "accession_number": "0001628280-25-003063",
+    "period_end": "2024-12-31",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 58360000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 28821000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 2.024912390270983,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "TSLA_2024-12-31_10K",
+    "company": "TSLA",
+    "cik": "0001318605",
+    "fiscal_year": 2024,
+    "accession_number": "0001628280-25-003063",
+    "period_end": "2024-12-31",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "Revenues",
+        "value": 97690000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfRevenue",
+        "value": 80240000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.17862626676220697,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "TSLA_2024-12-31_10K",
+    "company": "TSLA",
+    "cik": "0001318605",
+    "fiscal_year": 2024,
+    "accession_number": "0001628280-25-003063",
+    "period_end": "2024-12-31",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 7091000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 106618000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2023-12-31",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 122070000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.062014622542503325,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "TSLA_2024-12-31_10K",
+    "company": "TSLA",
+    "cik": "0001318605",
+    "fiscal_year": 2024,
+    "accession_number": "0001628280-25-003063",
+    "period_end": "2024-12-31",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 7091000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 62634000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2023-12-31",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 72913000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-12-31",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.10462791504053945,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NKE_2026-05-31_10K",
+    "company": "NKE",
+    "cik": "0000320187",
+    "fiscal_year": 2026,
+    "accession_number": "0000320187-26-000088",
+    "period_end": "2026-05-31",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 24603000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-05-31",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 12547000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-05-31",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 1.9608671395552721,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NKE_2026-05-31_10K",
+    "company": "NKE",
+    "cik": "0000320187",
+    "fiscal_year": 2026,
+    "accession_number": "0000320187-26-000088",
+    "period_end": "2026-05-31",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "value": 46398000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-06-01",
+        "period_end": "2026-05-31",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfGoodsAndServicesSold",
+        "value": 26487000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-06-01",
+        "period_end": "2026-05-31",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.42913487650329757,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NKE_2026-05-31_10K",
+    "company": "NKE",
+    "cik": "0000320187",
+    "fiscal_year": 2026,
+    "accession_number": "0000320187-26-000088",
+    "period_end": "2026-05-31",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 3108000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-06-01",
+        "period_end": "2026-05-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 36579000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-05-31",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 38410000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-05-31",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.08289215751643575,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NKE_2026-05-31_10K",
+    "company": "NKE",
+    "cik": "0000320187",
+    "fiscal_year": 2026,
+    "accession_number": "0000320187-26-000088",
+    "period_end": "2026-05-31",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 3108000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2025-06-01",
+        "period_end": "2026-05-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 13213000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-05-31",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 14865000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2026-05-31",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.2213832894080775,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NKE_2025-05-31_10K",
+    "company": "NKE",
+    "cik": "0000320187",
+    "fiscal_year": 2025,
+    "accession_number": "0000320187-25-000047",
+    "period_end": "2025-05-31",
+    "ratio": "current_ratio",
+    "inputs": [
+      {
+        "concept": "current_assets",
+        "tag_used": "AssetsCurrent",
+        "value": 23362000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-05-31",
+        "status": "available",
+        "input": "current_assets"
+      },
+      {
+        "concept": "current_liabilities",
+        "tag_used": "LiabilitiesCurrent",
+        "value": 10566000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-05-31",
+        "status": "available",
+        "input": "current_liabilities"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 2.2110543251940187,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NKE_2025-05-31_10K",
+    "company": "NKE",
+    "cik": "0000320187",
+    "fiscal_year": 2025,
+    "accession_number": "0000320187-25-000047",
+    "period_end": "2025-05-31",
+    "ratio": "gross_profit_margin",
+    "inputs": [
+      {
+        "concept": "revenue",
+        "tag_used": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "value": 46309000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-06-01",
+        "period_end": "2025-05-31",
+        "status": "available",
+        "input": "revenue"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "tag_used": "CostOfGoodsAndServicesSold",
+        "value": 26519000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-06-01",
+        "period_end": "2025-05-31",
+        "status": "available",
+        "input": "cost_of_revenue"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.42734673605562634,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NKE_2025-05-31_10K",
+    "company": "NKE",
+    "cik": "0000320187",
+    "fiscal_year": 2025,
+    "accession_number": "0000320187-25-000047",
+    "period_end": "2025-05-31",
+    "ratio": "roa",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 3219000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-06-01",
+        "period_end": "2025-05-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 38110000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-05-31",
+        "status": "available",
+        "input": "total_assets_begin"
+      },
+      {
+        "concept": "total_assets",
+        "tag_used": "Assets",
+        "value": 36579000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-05-31",
+        "status": "available",
+        "input": "total_assets_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.08619743201810173,
+    "calculator_status": "ok"
+  },
+  {
+    "filing_id": "NKE_2025-05-31_10K",
+    "company": "NKE",
+    "cik": "0000320187",
+    "fiscal_year": 2025,
+    "accession_number": "0000320187-25-000047",
+    "period_end": "2025-05-31",
+    "ratio": "roe",
+    "inputs": [
+      {
+        "concept": "net_income",
+        "tag_used": "NetIncomeLoss",
+        "value": 3219000000,
+        "unit": "USD",
+        "period_type": "duration",
+        "period_start": "2024-06-01",
+        "period_end": "2025-05-31",
+        "status": "available",
+        "input": "net_income"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 14430000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2024-05-31",
+        "status": "available",
+        "input": "equity_begin"
+      },
+      {
+        "concept": "equity",
+        "tag_used": "StockholdersEquity",
+        "value": 13213000000,
+        "unit": "USD",
+        "period_type": "instant",
+        "period_start": null,
+        "period_end": "2025-05-31",
+        "status": "available",
+        "input": "equity_end"
+      }
+    ],
+    "ground_truth_status": "available",
+    "ground_truth_ratio": 0.23289802119885686,
+    "calculator_status": "ok"
+  }
+]

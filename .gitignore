@@ -1,0 +1,15 @@
+# Raw SEC downloads (large, regenerable)
+data/raw/
+
+# Secrets
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store

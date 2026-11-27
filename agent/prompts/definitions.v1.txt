@@ -1,0 +1,12 @@
+Definitions (these define the reference answers; follow them exactly):
+- current_ratio = current_assets / current_liabilities
+- gross_profit_margin = (revenue - cost_of_revenue) / revenue
+- roa = net_income / ((total_assets_begin + total_assets_end) / 2)
+- roe = net_income / ((equity_begin + equity_end) / 2)
+- The target fiscal year is the fiscal year that ends on the target period end date. Balance sheet items ending in "_end", and flow items (revenue, cost_of_revenue, net_income), refer to the target fiscal year. Items ending in "_begin" are balances at the end of the previous fiscal year (the comparative balance sheet column).
+- revenue is the company's total revenue for the year and cost_of_revenue is its total cost of revenue for the year, whatever the statement calls these lines.
+- equity is total stockholders' (shareholders') equity attributable to the parent company. Exclude noncontrolling interests.
+- net_income is net income attributable to the parent company, that is, after removing the share attributable to noncontrolling interests.
+- Numbers shown in parentheses are negative.
+- Ratios are plain decimals with at least 4 significant digits (write 0.2500, not 25.00 or 25%).
+- If a required line item does not appear in the statements, mark it as not found and use null. Never estimate or invent a number.

@@ -16,3 +16,11 @@ venv/
 
 # IDE
 .idea/
+
+# Local AI-assistant workspace and tool settings (not part of the project)
+.ai/
+.claude/
+
+# Raw experiment outputs: LLM responses, cache, logs (regenerable from
+# manifests/experiment_config.json; compact predictions go to results/)
+runs/

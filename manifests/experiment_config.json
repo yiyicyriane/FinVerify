@@ -1,0 +1,31 @@
+{
+  "description": "FinVerify A/B/C/D experiment configuration. Fixed before the formal run; the runner refuses to run LLM versions on test filings unless frozen_prompts matches the current prompt files.",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "max_tokens": 16000,
+  "thinking": "adaptive; always on for this model and cannot be disabled, so version A is a single call with built-in hidden reasoning",
+  "sampling_parameters": "none sent: temperature/top_p/top_k are not accepted by this model (and temperature=0 never guaranteed identical outputs); reproducibility comes from fixed model/effort/max_tokens/prompt versions, saved raw outputs and repeats r1-r3",
+  "structured_outputs": "output_config.format json_schema on every structured step of every version; every object sets additionalProperties=false",
+  "refusal_fallback": "disabled: a server-side fallback would silently switch models mid-experiment; refusals are recorded as status=refusal",
+  "parse_retry_limit": 1,
+  "api_max_retries": 4,
+  "concurrency": 4,
+  "ratios": ["current_ratio", "gross_profit_margin", "roa", "roe"],
+  "versions": ["A", "B", "C", "C_tool", "D"],
+  "repeats": [1, 2, 3],
+  "primary_repeat": 1,
+  "dev_filings": ["AAPL_2025-09-27_10K"],
+  "dev_note": "Prompts are developed only on the toy filings and the dev filing. Headline results use the other 13 filings (52 records). AAPL_2026 is the same company as the dev filing, so a robustness row excluding all AAPL filings (12 filings, 48 records) is also reported.",
+  "robustness_exclude_companies": ["AAPL"],
+  "frozen_prompts": null,
+  "frozen_at": null,
+  "proposed_metric_rules": {
+    "status": "proposal, to be agreed with the analysis owner before the formal run",
+    "denominator": "for every version, all ground-truth-available (filing x ratio) records of the split; identical across versions",
+    "correct": "status == ok (or low_confidence_negative_equity with a value) and the value is within the tolerance",
+    "abstention": "missing_input, unit_mismatch (including version A result = null) count as incorrect and are reported separately as the abstention rate",
+    "failures": "parse_failure, truncated, refusal, api_error, no_tool_call count as incorrect and are reported separately",
+    "preprocessing_failure": "leak_check_failed",
+    "tolerance": "proposed: relative error <= 1%, fixed before the formal run"
+  }
+}

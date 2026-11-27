@@ -1,0 +1,2 @@
+# Python >= 3.10 (the anthropic SDK requires it). The data pipeline itself is standard library only.
+anthropic==2.14.0

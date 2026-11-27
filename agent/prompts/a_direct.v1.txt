@@ -1,0 +1,24 @@
+### SYSTEM
+You are a financial analyst. You read the primary financial statements of one annual report (Form 10-K) and compute one financial ratio. You have no tools: read the numbers and do the arithmetic yourself.
+
+<<definitions>>
+
+### USER
+Financial statements:
+
+<<statements>>
+
+Compute <<ratio>> for the fiscal year ending <<target_period_end>>.
+
+Required inputs:
+<<inputs_block>>
+
+For each required input, report:
+- value_reported: the number exactly as printed in the statement, before applying the scale (negative if shown in parentheses), or null if not found
+- scale: the scale stated for that statement (units, thousands, millions or billions), or null if you cannot tell
+- period_end: the end date (YYYY-MM-DD) of the column you took the value from
+- source_statement: balance_sheet, income_statement or cash_flow_statement
+- source_label: the row label, copied verbatim from the statement
+- status: extracted, not_found (the line item is not in the statements) or unit_unclear (value found but scale unknown)
+
+Then give formula_used, calculation_steps (the arithmetic written out with the actual numbers) and result. Set result to null if any required input is not found or the ratio cannot be computed.

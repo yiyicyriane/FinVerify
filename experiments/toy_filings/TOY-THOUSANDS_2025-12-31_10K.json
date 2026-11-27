@@ -1,0 +1,271 @@
+{
+ "filing_id": "TOY-THOUSANDS_2025-12-31_10K",
+ "company": "TOYTHOUSANDS",
+ "cik": null,
+ "fiscal_year": 2025,
+ "accession_number": null,
+ "period_end": "2025-12-31",
+ "source_url": null,
+ "synthetic": true,
+ "statements": {
+  "balance_sheet": {
+   "heading_matched": "CONSOLIDATED BALANCE SHEETS",
+   "unit_note": "(In thousands)",
+   "periods": [
+    "2025",
+    "2024"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024"
+    ],
+    [
+     "Current assets:",
+     "",
+     ""
+    ],
+    [
+     "Cash and cash equivalents",
+     "$1,500",
+     "$1,300"
+    ],
+    [
+     "Accounts receivable, net",
+     "2,000",
+     "1,600"
+    ],
+    [
+     "Inventories",
+     "1,000",
+     "1,000"
+    ],
+    [
+     "Total current assets",
+     "4,500",
+     "3,900"
+    ],
+    [
+     "Property and equipment, net",
+     "1,500",
+     "100"
+    ],
+    [
+     "Total assets",
+     "$6,000",
+     "$4,000"
+    ],
+    [
+     "Current liabilities:",
+     "",
+     ""
+    ],
+    [
+     "Accounts payable",
+     "$2,000",
+     "$1,400"
+    ],
+    [
+     "Accrued expenses",
+     "1,000",
+     "600"
+    ],
+    [
+     "Total current liabilities",
+     "3,000",
+     "2,000"
+    ],
+    [
+     "Long-term debt",
+     "500",
+     "500"
+    ],
+    [
+     "Total liabilities",
+     "3,500",
+     "2,500"
+    ],
+    [
+     "Stockholders' equity:",
+     "",
+     ""
+    ],
+    [
+     "Common stock",
+     "1,000",
+     "600"
+    ],
+    [
+     "Retained earnings",
+     "1,500",
+     "900"
+    ],
+    [
+     "Total stockholders' equity",
+     "2,500",
+     "1,500"
+    ],
+    [
+     "Total liabilities and stockholders' equity",
+     "$6,000",
+     "$4,000"
+    ]
+   ]
+  },
+  "income_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF OPERATIONS",
+   "unit_note": "(In thousands)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "Years ended",
+     "",
+     ""
+    ],
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024",
+     "December 31, 2023"
+    ],
+    [
+     "Revenue",
+     "$8,000",
+     "$7,000",
+     "$6,500"
+    ],
+    [
+     "Cost of revenue",
+     "6,000",
+     "5,400",
+     "5,100"
+    ],
+    [
+     "Gross profit",
+     "2,000",
+     "1,600",
+     "1,400"
+    ],
+    [
+     "Selling, general and administrative",
+     "1,450",
+     "1,200",
+     "1,050"
+    ],
+    [
+     "Income before income taxes",
+     "550",
+     "400",
+     "350"
+    ],
+    [
+     "Income tax expense",
+     "150",
+     "100",
+     "90"
+    ],
+    [
+     "Net income",
+     "$400",
+     "$300",
+     "$260"
+    ]
+   ]
+  },
+  "cash_flow_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+   "unit_note": "(In thousands)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "Years ended",
+     "",
+     ""
+    ],
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024",
+     "December 31, 2023"
+    ],
+    [
+     "Net income",
+     "$400",
+     "$300",
+     "$260"
+    ],
+    [
+     "Depreciation and amortization",
+     "100",
+     "20",
+     "20"
+    ],
+    [
+     "Changes in working capital",
+     "(200)",
+     "(50)",
+     "(40)"
+    ],
+    [
+     "Net cash provided by operating activities",
+     "300",
+     "270",
+     "240"
+    ],
+    [
+     "Purchases of property and equipment",
+     "(1,500)",
+     "(50)",
+     "(40)"
+    ],
+    [
+     "Net cash used in investing activities",
+     "(1,500)",
+     "(50)",
+     "(40)"
+    ],
+    [
+     "Proceeds from issuance of common stock",
+     "400",
+     "0",
+     "0"
+    ],
+    [
+     "Proceeds from (repayments of) borrowings, net",
+     "1,000",
+     "(100)",
+     "(100)"
+    ],
+    [
+     "Net cash provided by financing activities",
+     "1,400",
+     "(100)",
+     "(100)"
+    ],
+    [
+     "Net change in cash",
+     "200",
+     "120",
+     "100"
+    ]
+   ]
+  }
+ }
+}

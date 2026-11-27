@@ -1,0 +1,265 @@
+{
+ "filing_id": "TOY-SIMPLE_2025-12-31_10K",
+ "company": "TOYSIMPLE",
+ "cik": null,
+ "fiscal_year": 2025,
+ "accession_number": null,
+ "period_end": "2025-12-31",
+ "source_url": null,
+ "synthetic": true,
+ "statements": {
+  "balance_sheet": {
+   "heading_matched": "CONSOLIDATED BALANCE SHEETS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024"
+    ],
+    [
+     "Current assets:",
+     "",
+     ""
+    ],
+    [
+     "Cash and cash equivalents",
+     "$80",
+     "$60"
+    ],
+    [
+     "Accounts receivable, net",
+     "70",
+     "50"
+    ],
+    [
+     "Inventories",
+     "50",
+     "40"
+    ],
+    [
+     "Total current assets",
+     "200",
+     "150"
+    ],
+    [
+     "Property and equipment, net",
+     "400",
+     "250"
+    ],
+    [
+     "Total assets",
+     "$600",
+     "$400"
+    ],
+    [
+     "Current liabilities:",
+     "",
+     ""
+    ],
+    [
+     "Accounts payable",
+     "$60",
+     "$50"
+    ],
+    [
+     "Accrued expenses",
+     "40",
+     "30"
+    ],
+    [
+     "Total current liabilities",
+     "100",
+     "80"
+    ],
+    [
+     "Long-term debt",
+     "200",
+     "120"
+    ],
+    [
+     "Total liabilities",
+     "300",
+     "200"
+    ],
+    [
+     "Stockholders' equity:",
+     "",
+     ""
+    ],
+    [
+     "Common stock and additional paid-in capital",
+     "200",
+     "150"
+    ],
+    [
+     "Retained earnings",
+     "100",
+     "50"
+    ],
+    [
+     "Total stockholders' equity",
+     "300",
+     "200"
+    ],
+    [
+     "Total liabilities and stockholders' equity",
+     "$600",
+     "$400"
+    ]
+   ]
+  },
+  "income_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF OPERATIONS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "Years ended",
+     "",
+     ""
+    ],
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024",
+     "December 31, 2023"
+    ],
+    [
+     "Net sales",
+     "$1,000",
+     "$900",
+     "$800"
+    ],
+    [
+     "Cost of sales",
+     "600",
+     "560",
+     "500"
+    ],
+    [
+     "Gross margin",
+     "400",
+     "340",
+     "300"
+    ],
+    [
+     "Operating expenses",
+     "330",
+     "290",
+     "260"
+    ],
+    [
+     "Operating income",
+     "70",
+     "50",
+     "40"
+    ],
+    [
+     "Provision for income taxes",
+     "20",
+     "15",
+     "10"
+    ],
+    [
+     "Net income",
+     "$50",
+     "$35",
+     "$30"
+    ]
+   ]
+  },
+  "cash_flow_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "Years ended",
+     "",
+     ""
+    ],
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024",
+     "December 31, 2023"
+    ],
+    [
+     "Net income",
+     "$50",
+     "$35",
+     "$30"
+    ],
+    [
+     "Depreciation",
+     "20",
+     "15",
+     "10"
+    ],
+    [
+     "Net cash provided by operating activities",
+     "70",
+     "50",
+     "40"
+    ],
+    [
+     "Capital expenditures",
+     "(180)",
+     "(60)",
+     "(40)"
+    ],
+    [
+     "Net cash used in investing activities",
+     "(180)",
+     "(60)",
+     "(40)"
+    ],
+    [
+     "Proceeds from borrowings",
+     "80",
+     "20",
+     "10"
+    ],
+    [
+     "Proceeds from issuance of stock",
+     "50",
+     "0",
+     "0"
+    ],
+    [
+     "Net cash provided by financing activities",
+     "130",
+     "20",
+     "10"
+    ],
+    [
+     "Net change in cash",
+     "20",
+     "10",
+     "10"
+    ]
+   ]
+  }
+ }
+}

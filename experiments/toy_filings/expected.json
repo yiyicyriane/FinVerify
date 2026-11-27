@@ -1,0 +1,638 @@
+{
+ "TOY-SIMPLE_2025-12-31_10K": {
+  "current_ratio": {
+   "items": {
+    "current_assets": {
+     "value_reported": 200,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current assets",
+     "status": "extracted"
+    },
+    "current_liabilities": {
+     "value_reported": 100,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current liabilities",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 2.0,
+   "expected_status": "ok"
+  },
+  "gross_profit_margin": {
+   "items": {
+    "revenue": {
+     "value_reported": 1000,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net sales",
+     "status": "extracted"
+    },
+    "cost_of_revenue": {
+     "value_reported": 600,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Cost of sales",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.4,
+   "expected_status": "ok"
+  },
+  "roa": {
+   "items": {
+    "net_income": {
+     "value_reported": 50,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income",
+     "status": "extracted"
+    },
+    "total_assets_begin": {
+     "value_reported": 400,
+     "scale": "millions",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    },
+    "total_assets_end": {
+     "value_reported": 600,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.1,
+   "expected_status": "ok"
+  },
+  "roe": {
+   "items": {
+    "net_income": {
+     "value_reported": 50,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income",
+     "status": "extracted"
+    },
+    "equity_begin": {
+     "value_reported": 200,
+     "scale": "millions",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' equity",
+     "status": "extracted"
+    },
+    "equity_end": {
+     "value_reported": 300,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' equity",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.2,
+   "expected_status": "ok"
+  }
+ },
+ "TOY-THOUSANDS_2025-12-31_10K": {
+  "current_ratio": {
+   "items": {
+    "current_assets": {
+     "value_reported": 4500,
+     "scale": "thousands",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current assets",
+     "status": "extracted"
+    },
+    "current_liabilities": {
+     "value_reported": 3000,
+     "scale": "thousands",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current liabilities",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 1.5,
+   "expected_status": "ok"
+  },
+  "gross_profit_margin": {
+   "items": {
+    "revenue": {
+     "value_reported": 8000,
+     "scale": "thousands",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Revenue",
+     "status": "extracted"
+    },
+    "cost_of_revenue": {
+     "value_reported": 6000,
+     "scale": "thousands",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Cost of revenue",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.25,
+   "expected_status": "ok"
+  },
+  "roa": {
+   "items": {
+    "net_income": {
+     "value_reported": 400,
+     "scale": "thousands",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income",
+     "status": "extracted"
+    },
+    "total_assets_begin": {
+     "value_reported": 4000,
+     "scale": "thousands",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    },
+    "total_assets_end": {
+     "value_reported": 6000,
+     "scale": "thousands",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.08,
+   "expected_status": "ok"
+  },
+  "roe": {
+   "items": {
+    "net_income": {
+     "value_reported": 400,
+     "scale": "thousands",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income",
+     "status": "extracted"
+    },
+    "equity_begin": {
+     "value_reported": 1500,
+     "scale": "thousands",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' equity",
+     "status": "extracted"
+    },
+    "equity_end": {
+     "value_reported": 2500,
+     "scale": "thousands",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' equity",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.2,
+   "expected_status": "ok"
+  }
+ },
+ "TOY-ZEROCL_2025-12-31_10K": {
+  "current_ratio": {
+   "items": {
+    "current_assets": {
+     "value_reported": 100,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current assets",
+     "status": "extracted"
+    },
+    "current_liabilities": {
+     "value_reported": 0,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current liabilities",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": null,
+   "expected_status": "undefined_division"
+  },
+  "gross_profit_margin": {
+   "items": {
+    "revenue": {
+     "value_reported": 300,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Revenue",
+     "status": "extracted"
+    },
+    "cost_of_revenue": {
+     "value_reported": 120,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Cost of revenue",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.6,
+   "expected_status": "ok"
+  },
+  "roa": {
+   "items": {
+    "net_income": {
+     "value_reported": 40,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income",
+     "status": "extracted"
+    },
+    "total_assets_begin": {
+     "value_reported": 400,
+     "scale": "millions",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    },
+    "total_assets_end": {
+     "value_reported": 500,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.0888888888888889,
+   "expected_status": "ok"
+  },
+  "roe": {
+   "items": {
+    "net_income": {
+     "value_reported": 40,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income",
+     "status": "extracted"
+    },
+    "equity_begin": {
+     "value_reported": 400,
+     "scale": "millions",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' equity",
+     "status": "extracted"
+    },
+    "equity_end": {
+     "value_reported": 500,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' equity",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.0888888888888889,
+   "expected_status": "ok"
+  }
+ },
+ "TOY-NEGEQ_2025-12-31_10K": {
+  "current_ratio": {
+   "items": {
+    "current_assets": {
+     "value_reported": 150,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current assets",
+     "status": "extracted"
+    },
+    "current_liabilities": {
+     "value_reported": 100,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current liabilities",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 1.5,
+   "expected_status": "ok"
+  },
+  "gross_profit_margin": {
+   "items": {
+    "revenue": {
+     "value_reported": 500,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net revenues",
+     "status": "extracted"
+    },
+    "cost_of_revenue": {
+     "value_reported": 350,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Cost of revenues",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.3,
+   "expected_status": "ok"
+  },
+  "roa": {
+   "items": {
+    "net_income": {
+     "value_reported": 25,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income",
+     "status": "extracted"
+    },
+    "total_assets_begin": {
+     "value_reported": 280,
+     "scale": "millions",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    },
+    "total_assets_end": {
+     "value_reported": 300,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.08620689655172414,
+   "expected_status": "ok"
+  },
+  "roe": {
+   "items": {
+    "net_income": {
+     "value_reported": 25,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income",
+     "status": "extracted"
+    },
+    "equity_begin": {
+     "value_reported": -80,
+     "scale": "millions",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' deficit",
+     "status": "extracted"
+    },
+    "equity_end": {
+     "value_reported": -120,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' deficit",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": -0.25,
+   "expected_status": "low_confidence_negative_equity"
+  }
+ },
+ "TOY-NOCOGS_2025-12-31_10K": {
+  "current_ratio": {
+   "items": {
+    "current_assets": {
+     "value_reported": 90,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current assets",
+     "status": "extracted"
+    },
+    "current_liabilities": {
+     "value_reported": 60,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current liabilities",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 1.5,
+   "expected_status": "ok"
+  },
+  "gross_profit_margin": {
+   "items": {
+    "revenue": {
+     "value_reported": 400,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Revenues",
+     "status": "extracted"
+    },
+    "cost_of_revenue": {
+     "value_reported": null,
+     "scale": null,
+     "period_end": null,
+     "source_statement": null,
+     "source_label": null,
+     "status": "not_found"
+    }
+   },
+   "expected_ratio": null,
+   "expected_status": "missing_input"
+  },
+  "roa": {
+   "items": {
+    "net_income": {
+     "value_reported": 30,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income",
+     "status": "extracted"
+    },
+    "total_assets_begin": {
+     "value_reported": 200,
+     "scale": "millions",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    },
+    "total_assets_end": {
+     "value_reported": 300,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.12,
+   "expected_status": "ok"
+  },
+  "roe": {
+   "items": {
+    "net_income": {
+     "value_reported": 30,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income",
+     "status": "extracted"
+    },
+    "equity_begin": {
+     "value_reported": 100,
+     "scale": "millions",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' equity",
+     "status": "extracted"
+    },
+    "equity_end": {
+     "value_reported": 150,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' equity",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.24,
+   "expected_status": "ok"
+  }
+ },
+ "TOY-NCI_2025-12-31_10K": {
+  "current_ratio": {
+   "items": {
+    "current_assets": {
+     "value_reported": 700,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current assets",
+     "status": "extracted"
+    },
+    "current_liabilities": {
+     "value_reported": 500,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total current liabilities",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 1.4,
+   "expected_status": "ok"
+  },
+  "gross_profit_margin": {
+   "items": {
+    "revenue": {
+     "value_reported": 2000,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net sales",
+     "status": "extracted"
+    },
+    "cost_of_revenue": {
+     "value_reported": 1300,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Cost of goods sold",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.35,
+   "expected_status": "ok"
+  },
+  "roa": {
+   "items": {
+    "net_income": {
+     "value_reported": 100,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income attributable to the parent",
+     "status": "extracted"
+    },
+    "total_assets_begin": {
+     "value_reported": 2000,
+     "scale": "millions",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    },
+    "total_assets_end": {
+     "value_reported": 2400,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total assets",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.045454545454545456,
+   "expected_status": "ok"
+  },
+  "roe": {
+   "items": {
+    "net_income": {
+     "value_reported": 100,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "income_statement",
+     "source_label": "Net income attributable to the parent",
+     "status": "extracted"
+    },
+    "equity_begin": {
+     "value_reported": 800,
+     "scale": "millions",
+     "period_end": "2024-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' equity attributable to the parent",
+     "status": "extracted"
+    },
+    "equity_end": {
+     "value_reported": 1000,
+     "scale": "millions",
+     "period_end": "2025-12-31",
+     "source_statement": "balance_sheet",
+     "source_label": "Total stockholders' equity attributable to the parent",
+     "status": "extracted"
+    }
+   },
+   "expected_ratio": 0.1111111111111111,
+   "expected_status": "ok"
+  }
+ }
+}

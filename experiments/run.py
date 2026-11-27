@@ -56,6 +56,25 @@ def load_json(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
+def load_dotenv(path: Path = ROOT / ".env") -> list:
+    """Read KEY=VALUE lines from the gitignored .env into os.environ (existing variables win).
+
+    Returns the names that were set (never the values)."""
+    if not Path(path).exists():
+        return []
+    loaded = []
+    for line in Path(path).read_text(encoding="utf-8-sig").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key, value = key.strip(), value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+            loaded.append(key)
+    return loaded
+
+
 def write_json(path, obj):
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     tmp = Path(path).with_suffix(".tmp")
@@ -156,10 +175,12 @@ def main(argv=None, sdk=None) -> int:
                              "then run `python -m experiments.freeze_prompts` before touching test filings.")
         if args.model and args.model != config["model"]:
             raise SystemExit("--model override is only allowed on dev/toy filings.")
-    if uses_llm and sdk is None and not args.skip_key_check and not (
-            os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
-        raise SystemExit("No ANTHROPIC_API_KEY in the environment. Set it yourself (never commit it), "
-                         "or pass --skip-key-check if you use an `ant auth login` profile.")
+    if uses_llm and sdk is None:
+        load_dotenv()
+        if not args.skip_key_check and not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
+            raise SystemExit("No ANTHROPIC_API_KEY found. Set it in your environment or in the gitignored .env "
+                             "file at the repo root (ANTHROPIC_API_KEY=...), never in code, "
+                             "or pass --skip-key-check if you use an `ant auth login` profile.")
 
     run_dir.mkdir(parents=True, exist_ok=True)
     llm = None

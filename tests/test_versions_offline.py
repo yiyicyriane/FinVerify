@@ -92,6 +92,19 @@ class OfflineVersionTests(unittest.TestCase):
             raise AssertionError("resume must replay from cache")
         self.assertEqual(runner.main(args + ["--resume"], sdk=FakeSDK(no_call)), 0)
 
+    def test_dotenv_loader_never_overrides_existing_variables(self):
+        env_file = self.tmp / ".env"
+        env_file.write_text("# comment\nFV_TEST_A=one\nFV_TEST_B='two'\n", encoding="utf-8")
+        import os
+        os.environ["FV_TEST_B"] = "already set"
+        try:
+            self.assertEqual(runner.load_dotenv(env_file), ["FV_TEST_A"])
+            self.assertEqual(os.environ["FV_TEST_A"], "one")
+            self.assertEqual(os.environ["FV_TEST_B"], "already set")
+        finally:
+            os.environ.pop("FV_TEST_A", None)
+            os.environ.pop("FV_TEST_B", None)
+
     def test_runner_refuses_unfrozen_prompts_on_test_filings(self):
         config = load_json(runner.CONFIG_PATH)
         if config.get("frozen_prompts"):

@@ -70,7 +70,7 @@ in `manifests/experiment_config.json` equal the current prompt files.
 ```bash
 python -m venv .venv && .venv/Scripts/activate      # Windows; source .venv/bin/activate elsewhere
 pip install -r requirements.txt                      # Python >= 3.10
-export ANTHROPIC_API_KEY=...                         # set it yourself; never commit it (.env is gitignored)
+export ANTHROPIC_API_KEY=...                         # or a line ANTHROPIC_API_KEY=... in the gitignored .env; never commit it
 export PYTHONUTF8=1                                  # Windows: read the cleaned filings as UTF-8
 
 python -m unittest discover -s tests -t .            # offline tests, no API key needed

@@ -1,0 +1,66 @@
+{
+ "run_id": "2026-11-26_D_pipeline_check",
+ "invocations": [
+  {
+   "started_at": "2026-11-27T06:46:51+00:00",
+   "argv": [
+    "--run-id",
+    "2026-11-26_D_pipeline_check",
+    "--versions",
+    "D",
+    "--filings",
+    "all,toy"
+   ],
+   "versions": [
+    "D"
+   ],
+   "filings": [
+    "AAPL_2026-09-26_10K",
+    "AAPL_2025-09-27_10K",
+    "MSFT_2026-06-30_10K",
+    "MSFT_2025-06-30_10K",
+    "NVDA_2026-01-25_10K",
+    "NVDA_2025-01-26_10K",
+    "KO_2025-12-31_10K",
+    "KO_2024-12-31_10K",
+    "HD_2026-02-01_10K",
+    "HD_2025-02-02_10K",
+    "TSLA_2025-12-31_10K",
+    "TSLA_2024-12-31_10K",
+    "NKE_2026-05-31_10K",
+    "NKE_2025-05-31_10K",
+    "TOY-NCI_2025-12-31_10K",
+    "TOY-NEGEQ_2025-12-31_10K",
+    "TOY-NOCOGS_2025-12-31_10K",
+    "TOY-SIMPLE_2025-12-31_10K",
+    "TOY-THOUSANDS_2025-12-31_10K",
+    "TOY-ZEROCL_2025-12-31_10K"
+   ],
+   "ratios": [
+    "current_ratio",
+    "gross_profit_margin",
+    "roa",
+    "roe"
+   ],
+   "repeats": [
+    1
+   ],
+   "model": "claude-opus-5-5",
+   "effort": "medium",
+   "max_tokens": 16000,
+   "prompt_versions": {
+    "a_direct": "a_direct.v1@e582df01",
+    "extract": "extract.v1@631e1e0d",
+    "b_calc": "b_calc.v1@aaef1bfd",
+    "c_tool": "c_tool.v1@666c2736"
+   },
+   "frozen_prompts": null,
+   "anthropic_sdk": "2.14.0",
+   "python": "3.13.1",
+   "git": {
+    "commit": "9cbf2e1ee5f4e30e5f8c15cd9858936ff3400531",
+    "dirty": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,293 @@
+{
+ "filing_id": "TOY-NCI_2025-12-31_10K",
+ "company": "TOYNCI",
+ "cik": null,
+ "fiscal_year": 2025,
+ "accession_number": null,
+ "period_end": "2025-12-31",
+ "source_url": null,
+ "synthetic": true,
+ "statements": {
+  "balance_sheet": {
+   "heading_matched": "CONSOLIDATED BALANCE SHEETS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024"
+    ],
+    [
+     "Current assets:",
+     "",
+     ""
+    ],
+    [
+     "Cash and cash equivalents",
+     "$300",
+     "$250"
+    ],
+    [
+     "Accounts receivable, net",
+     "250",
+     "220"
+    ],
+    [
+     "Inventories",
+     "150",
+     "130"
+    ],
+    [
+     "Total current assets",
+     "700",
+     "600"
+    ],
+    [
+     "Property, plant and equipment, net",
+     "1,700",
+     "1,400"
+    ],
+    [
+     "Total assets",
+     "$2,400",
+     "$2,000"
+    ],
+    [
+     "Current liabilities:",
+     "",
+     ""
+    ],
+    [
+     "Accounts payable",
+     "$300",
+     "$270"
+    ],
+    [
+     "Accrued liabilities",
+     "200",
+     "180"
+    ],
+    [
+     "Total current liabilities",
+     "500",
+     "450"
+    ],
+    [
+     "Long-term debt",
+     "800",
+     "650"
+    ],
+    [
+     "Total liabilities",
+     "1,300",
+     "1,100"
+    ],
+    [
+     "Equity:",
+     "",
+     ""
+    ],
+    [
+     "Common stock and additional paid-in capital",
+     "600",
+     "500"
+    ],
+    [
+     "Retained earnings",
+     "400",
+     "300"
+    ],
+    [
+     "Total stockholders' equity attributable to the parent",
+     "1,000",
+     "800"
+    ],
+    [
+     "Noncontrolling interests",
+     "100",
+     "100"
+    ],
+    [
+     "Total equity",
+     "1,100",
+     "900"
+    ],
+    [
+     "Total liabilities and equity",
+     "$2,400",
+     "$2,000"
+    ]
+   ]
+  },
+  "income_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF OPERATIONS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "Years ended",
+     "",
+     ""
+    ],
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024",
+     "December 31, 2023"
+    ],
+    [
+     "Net sales",
+     "$2,000",
+     "$1,800",
+     "$1,650"
+    ],
+    [
+     "Cost of goods sold",
+     "1,300",
+     "1,190",
+     "1,100"
+    ],
+    [
+     "Gross profit",
+     "700",
+     "610",
+     "550"
+    ],
+    [
+     "Operating expenses",
+     "540",
+     "480",
+     "440"
+    ],
+    [
+     "Income before income taxes",
+     "160",
+     "130",
+     "110"
+    ],
+    [
+     "Income tax expense",
+     "40",
+     "32",
+     "27"
+    ],
+    [
+     "Consolidated net income",
+     "120",
+     "98",
+     "83"
+    ],
+    [
+     "Less: Net income attributable to noncontrolling interests",
+     "20",
+     "18",
+     "15"
+    ],
+    [
+     "Net income attributable to the parent",
+     "$100",
+     "$80",
+     "$68"
+    ]
+   ]
+  },
+  "cash_flow_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "Years ended",
+     "",
+     ""
+    ],
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024",
+     "December 31, 2023"
+    ],
+    [
+     "Consolidated net income",
+     "$120",
+     "$98",
+     "$83"
+    ],
+    [
+     "Depreciation",
+     "90",
+     "80",
+     "75"
+    ],
+    [
+     "Net cash provided by operating activities",
+     "210",
+     "178",
+     "158"
+    ],
+    [
+     "Capital expenditures",
+     "(390)",
+     "(200)",
+     "(150)"
+    ],
+    [
+     "Net cash used in investing activities",
+     "(390)",
+     "(200)",
+     "(150)"
+    ],
+    [
+     "Proceeds from borrowings",
+     "150",
+     "50",
+     "20"
+    ],
+    [
+     "Proceeds from issuance of stock",
+     "100",
+     "0",
+     "0"
+    ],
+    [
+     "Dividends paid to noncontrolling interests",
+     "(20)",
+     "(18)",
+     "(15)"
+    ],
+    [
+     "Net cash provided by financing activities",
+     "230",
+     "32",
+     "5"
+    ],
+    [
+     "Net change in cash",
+     "50",
+     "10",
+     "13"
+    ]
+   ]
+  }
+ }
+}

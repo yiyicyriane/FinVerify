@@ -1,0 +1,75 @@
+{
+ "run_id": "dev-01",
+ "invocations": [
+  {
+   "started_at": "2026-11-28T01:35:09+00:00",
+   "argv": [
+    "--run-id",
+    "dev-01",
+    "--filings",
+    "dev,toy"
+   ],
+   "versions": [
+    "A",
+    "B",
+    "C",
+    "C_tool",
+    "D"
+   ],
+   "filings": [
+    "AAPL_2025-09-27_10K",
+    "TOY-NCI_2025-12-31_10K",
+    "TOY-NEGEQ_2025-12-31_10K",
+    "TOY-NOCOGS_2025-12-31_10K",
+    "TOY-SIMPLE_2025-12-31_10K",
+    "TOY-THOUSANDS_2025-12-31_10K",
+    "TOY-ZEROCL_2025-12-31_10K"
+   ],
+   "ratios": [
+    "current_ratio",
+    "gross_profit_margin",
+    "roa",
+    "roe"
+   ],
+   "repeats": [
+    1
+   ],
+   "backend": {
+    "provider": "ollama",
+    "model": "qwen3:8b",
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 8192,
+    "max_tokens": 4096,
+    "think": false,
+    "server_version": "0.40.19",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "model_details": {
+     "parent_model": "",
+     "format": "gguf",
+     "family": "qwen3",
+     "families": [
+      "qwen3"
+     ],
+     "parameter_size": "8.2B",
+     "quantization_level": "Q4_K_M",
+     "context_length": 40960,
+     "embedding_length": 4096,
+     "runner": "ggml"
+    }
+   },
+   "prompt_versions": {
+    "a_direct": "a_direct.v1@e582df01",
+    "extract": "extract.v1@631e1e0d",
+    "b_calc": "b_calc.v1@aaef1bfd",
+    "c_tool": "c_tool.v1@666c2736"
+   },
+   "frozen_prompts": null,
+   "python": "3.13.1",
+   "git": {
+    "commit": "04ed5701e0d82e5e94aab263409963affeba76de",
+    "dirty": false
+   }
+  }
+ ]
+}

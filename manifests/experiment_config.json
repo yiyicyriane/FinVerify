@@ -1,0 +1,70 @@
+{
+  "description": "FinVerify A/B/C/D experiment configuration. Fixed before the formal run; the runner refuses to run LLM versions on test filings unless frozen_prompts matches the current prompt files.",
+  "provider": "ollama",
+  "providers": {
+    "ollama": {
+      "model": "qwen3:8b",
+      "host": "http://127.0.0.1:11434",
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "max_tokens": 4096,
+      "think": false,
+      "timeout": 900,
+      "concurrency": 1,
+      "notes": "Free local model (no API key, no rate limits, data stays on the machine). Greedy decoding with a fixed seed. Thinking disabled for every version, so version A has no hidden reasoning: its only reasoning is the visible calculation_steps field. max_tokens is num_predict, identical for every step of every version."
+    },
+    "anthropic": {
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "max_tokens": 16000,
+      "api_max_retries": 4,
+      "concurrency": 4,
+      "notes": "Optional paid alternative, not used for the reported results. temperature/top_p/top_k are not accepted by this model; adaptive thinking cannot be disabled; no refusal fallback (it would switch models mid-experiment)."
+    }
+  },
+  "structured_outputs": "every structured step of every version is constrained to its JSON schema (Ollama: format; Anthropic: output_config.format) and validated again in code",
+  "parse_retry_limit": 1,
+  "ratios": [
+    "current_ratio",
+    "gross_profit_margin",
+    "roa",
+    "roe"
+  ],
+  "versions": [
+    "A",
+    "B",
+    "C",
+    "C_tool",
+    "D"
+  ],
+  "repeats": [
+    1,
+    2,
+    3
+  ],
+  "primary_repeat": 1,
+  "dev_filings": [
+    "AAPL_2025-09-27_10K"
+  ],
+  "dev_note": "Prompts are developed only on the toy filings and the dev filing. Headline results use the other 13 filings (52 records). AAPL_2026 is the same company as the dev filing, so a robustness row excluding all AAPL filings (12 filings, 48 records) is also reported.",
+  "robustness_exclude_companies": [
+    "AAPL"
+  ],
+  "frozen_prompts": {
+    "a_direct": "a_direct.v1@126fb470",
+    "extract": "extract.v1@eee6edff",
+    "b_calc": "b_calc.v1@9e736310",
+    "c_tool": "c_tool.v1@9a651a6b"
+  },
+  "frozen_at": "2026-11-28T01:50:22+00:00",
+  "proposed_metric_rules": {
+    "status": "proposal, to be agreed with the analysis owner before the formal run",
+    "denominator": "for every version, all ground-truth-available (filing x ratio) records of the split; identical across versions",
+    "correct": "status == ok (or low_confidence_negative_equity with a value) and the value is within the tolerance",
+    "abstention": "missing_input, unit_mismatch (including version A result = null) count as incorrect and are reported separately as the abstention rate",
+    "failures": "parse_failure, truncated, refusal, api_error, no_tool_call count as incorrect and are reported separately",
+    "preprocessing_failure": "leak_check_failed",
+    "tolerance": "proposed: relative error <= 1%, fixed before the formal run"
+  }
+}

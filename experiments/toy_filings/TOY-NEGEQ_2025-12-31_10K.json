@@ -1,0 +1,260 @@
+{
+ "filing_id": "TOY-NEGEQ_2025-12-31_10K",
+ "company": "TOYNEGEQ",
+ "cik": null,
+ "fiscal_year": 2025,
+ "accession_number": null,
+ "period_end": "2025-12-31",
+ "source_url": null,
+ "synthetic": true,
+ "statements": {
+  "balance_sheet": {
+   "heading_matched": "CONSOLIDATED BALANCE SHEETS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024"
+    ],
+    [
+     "Current assets:",
+     "",
+     ""
+    ],
+    [
+     "Cash and cash equivalents",
+     "$90",
+     "$85"
+    ],
+    [
+     "Accounts receivable, net",
+     "60",
+     "55"
+    ],
+    [
+     "Total current assets",
+     "150",
+     "140"
+    ],
+    [
+     "Property and equipment, net",
+     "150",
+     "140"
+    ],
+    [
+     "Total assets",
+     "$300",
+     "$280"
+    ],
+    [
+     "Current liabilities:",
+     "",
+     ""
+    ],
+    [
+     "Accounts payable",
+     "$70",
+     "$60"
+    ],
+    [
+     "Accrued expenses",
+     "30",
+     "30"
+    ],
+    [
+     "Total current liabilities",
+     "100",
+     "90"
+    ],
+    [
+     "Long-term debt",
+     "320",
+     "270"
+    ],
+    [
+     "Total liabilities",
+     "420",
+     "360"
+    ],
+    [
+     "Stockholders' deficit:",
+     "",
+     ""
+    ],
+    [
+     "Common stock and additional paid-in capital",
+     "50",
+     "50"
+    ],
+    [
+     "Accumulated deficit",
+     "(170)",
+     "(130)"
+    ],
+    [
+     "Total stockholders' deficit",
+     "(120)",
+     "(80)"
+    ],
+    [
+     "Total liabilities and stockholders' deficit",
+     "$300",
+     "$280"
+    ]
+   ]
+  },
+  "income_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF OPERATIONS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "Years ended",
+     "",
+     ""
+    ],
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024",
+     "December 31, 2023"
+    ],
+    [
+     "Net revenues",
+     "$500",
+     "$470",
+     "$450"
+    ],
+    [
+     "Cost of revenues",
+     "350",
+     "335",
+     "320"
+    ],
+    [
+     "Gross profit",
+     "150",
+     "135",
+     "130"
+    ],
+    [
+     "Operating expenses",
+     "105",
+     "100",
+     "98"
+    ],
+    [
+     "Interest expense",
+     "(15)",
+     "(12)",
+     "(10)"
+    ],
+    [
+     "Income before income taxes",
+     "30",
+     "23",
+     "22"
+    ],
+    [
+     "Income tax expense",
+     "5",
+     "3",
+     "4"
+    ],
+    [
+     "Net income",
+     "$25",
+     "$20",
+     "$18"
+    ]
+   ]
+  },
+  "cash_flow_statement": {
+   "heading_matched": "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+   "unit_note": "(In millions)",
+   "periods": [
+    "2025",
+    "2024",
+    "2023"
+   ],
+   "tables_joined": 1,
+   "rowspan_cells": 0,
+   "rows": [
+    [
+     "",
+     "Years ended",
+     "",
+     ""
+    ],
+    [
+     "",
+     "December 31, 2025",
+     "December 31, 2024",
+     "December 31, 2023"
+    ],
+    [
+     "Net income",
+     "$25",
+     "$20",
+     "$18"
+    ],
+    [
+     "Net cash provided by operating activities",
+     "45",
+     "40",
+     "35"
+    ],
+    [
+     "Capital expenditures",
+     "(20)",
+     "(15)",
+     "(15)"
+    ],
+    [
+     "Net cash used in investing activities",
+     "(20)",
+     "(15)",
+     "(15)"
+    ],
+    [
+     "Share repurchases",
+     "(65)",
+     "(30)",
+     "(20)"
+    ],
+    [
+     "Proceeds from long-term debt",
+     "45",
+     "10",
+     "5"
+    ],
+    [
+     "Net cash used in financing activities",
+     "(20)",
+     "(20)",
+     "(15)"
+    ],
+    [
+     "Net change in cash",
+     "5",
+     "5",
+     "5"
+    ]
+   ]
+  }
+ }
+}

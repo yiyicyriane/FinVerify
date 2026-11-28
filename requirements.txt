@@ -1,0 +1,4 @@
+# Python >= 3.10. The data pipeline and the default (Ollama, local) backend are standard library only;
+# Ollama itself is installed separately (https://ollama.com) with `ollama pull qwen3:8b`.
+# anthropic is only needed for the optional paid backend (--provider anthropic) and the tests.
+anthropic==2.14.0

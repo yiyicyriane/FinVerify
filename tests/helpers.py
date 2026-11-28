@@ -51,6 +51,45 @@ class FakeSDK:
         self.messages = FakeMessages(responder)
 
 
+def anthropic_backend(responder):
+    """An AnthropicBackend whose SDK is the fake above (responses in Anthropic message format)."""
+    from agent.llm_client import AnthropicBackend
+    return AnthropicBackend("mock-model", "medium", 16000, sdk=FakeSDK(responder))
+
+
+def fake_llm(cache_dir, responder):
+    from agent.llm_client import LLMClient
+    return LLMClient(cache_dir, anthropic_backend(responder))
+
+
+class FakeOllama:
+    """Stands in for the Ollama HTTP API: records requests, returns /api/chat responses from a responder."""
+
+    def __init__(self, responder, models=("qwen3:8b",)):
+        self.responder = responder
+        self.requests = []
+        self.models = models
+
+    def __call__(self, path, payload):
+        if path == "/api/tags":
+            return {"models": [{"name": m, "model": m, "digest": "sha256:mock"} for m in self.models]}
+        if path == "/api/version":
+            return {"version": "0.0-mock"}
+        self.requests.append(copy.deepcopy(payload))
+        result = self.responder(payload)
+        if isinstance(result, Exception):
+            raise result
+        return result
+
+
+def ollama_chat(content="", tool_calls=None, done_reason="stop"):
+    message = {"role": "assistant", "content": content}
+    if tool_calls:
+        message["tool_calls"] = tool_calls
+    return {"model": "qwen3:8b", "message": message, "done": True, "done_reason": done_reason,
+            "prompt_eval_count": 100, "eval_count": 20}
+
+
 def step_of(request: dict) -> str:
     """Which step a request belongs to, from its schema / tools."""
     if request.get("tools"):

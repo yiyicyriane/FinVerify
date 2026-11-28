@@ -21,10 +21,11 @@ documented in `data/README.md`.
 * **A can abstain**: it uses the same definitions ("if a line item is missing, use null").
   `result = null` is recorded as `missing_input`. A has no gate, so it may abstain less
   often than B/C; see the denominator rule below.
-* **A is not reasoning-free**: the model (`claude-opus-5-5`) always runs adaptive
-  thinking, here at effort `medium`. A is "a single call with built-in hidden
-  reasoning", which can raise A's accuracy and shrink the B vs C gap. That is a
-  result, not a bug.
+* **Model**: the reported runs use a free local model, `qwen3:8b` served by
+  [Ollama](https://ollama.com), with thinking disabled for every version. So A has
+  no hidden reasoning: its only reasoning is the visible `calculation_steps` field it
+  writes before `result`. (The optional Anthropic backend cannot disable thinking;
+  if it is ever used, A becomes "a single call with built-in hidden reasoning".)
 * **D cannot show the calculator is correct.** The ground-truth ratios were
   themselves computed with `agent/calculator.py`, so D scores 100% by construction.
   D checks the schema -> gate -> normalise -> calculator -> output path. Calculator
@@ -70,8 +71,10 @@ in `manifests/experiment_config.json` equal the current prompt files.
 ```bash
 python -m venv .venv && .venv/Scripts/activate      # Windows; source .venv/bin/activate elsewhere
 pip install -r requirements.txt                      # Python >= 3.10
-export ANTHROPIC_API_KEY=...                         # or a line ANTHROPIC_API_KEY=... in the gitignored .env; never commit it
+# install Ollama from https://ollama.com (Windows: winget install Ollama.Ollama), then:
+ollama pull qwen3:8b                                 # ~5.2 GB, runs on an 8 GB GPU; no API key, no cost
 export PYTHONUTF8=1                                  # Windows: read the cleaned filings as UTF-8
+# optional paid backend: --provider anthropic with ANTHROPIC_API_KEY in the environment or the gitignored .env
 
 python -m unittest discover -s tests -t .            # offline tests, no API key needed
 python -m experiments.run --run-id d-check --versions D --filings all,toy   # no API key needed
@@ -94,14 +97,16 @@ python -m experiments.sanity_summary --run-id main
 
 ## Reproducibility
 
-Fixed in `manifests/experiment_config.json`: model, effort, `max_tokens` (16000
-for every step of every version; thinking and output share it), prompt
-versions, primary repeat (r1), dev filing. No sampling parameters are sent: the
-model does not accept `temperature`, and `temperature=0` never guaranteed
-identical outputs anyway. Run-to-run variance is measured with repeats r1-r3.
+Fixed in `manifests/experiment_config.json` (provider `ollama`): model `qwen3:8b`,
+`temperature` 0 (greedy decoding), `seed` 42, `num_ctx` 8192, `max_tokens` 4096
+(Ollama `num_predict`, identical for every step of every version), thinking off,
+prompt versions, primary repeat (r1), dev filing. Each run records the Ollama
+server version and the exact model digest in `run_meta.json`. Greedy decoding with
+a fixed seed is close to deterministic on the same machine, but not guaranteed
+across hardware or drivers; repeats r2/r3 measure how much it varies in practice.
 Every raw response is kept in `runs/<run_id>/cache/` and referenced from each
-prediction (`llm_calls[].raw_path`). Server-side refusal fallbacks are not
-enabled because they would switch models mid-experiment.
+prediction (`llm_calls[].raw_path`). The data never leaves the machine and there is
+no API cost or rate limit.
 
 Per LLM step the decision order is fixed: API error (no response, not cached) ->
 `stop_reason` (`max_tokens` -> `truncated`, `refusal` -> `refusal`; never retried) ->
@@ -138,9 +143,10 @@ One JSON object per line, one line per (version x filing x ratio x repeat):
                    "status": "extracted", "inconsistent": false, "concept": "net_income",
                    "value_usd": 132175000000.0}
   },
-  "llm_calls": [{"step": "extract", "attempt": 1, "model": "claude-opus-5-5", "prompt_version": "extract.v1@...",
-                 "effort": "medium", "max_tokens": 16000, "cache_key": "...", "cached": false,
-                 "message_id": "...", "stop_reason": "end_turn", "input_tokens": 0, "output_tokens": 0,
+  "llm_calls": [{"step": "extract", "attempt": 1, "prompt_version": "extract.v1@...",
+                 "provider": "ollama", "model": "qwen3:8b", "temperature": 0, "seed": 42, "num_ctx": 8192,
+                 "max_tokens": 4096, "think": false, "cache_key": "...", "cached": false,
+                 "message_id": null, "stop_reason": "end_turn", "input_tokens": 0, "output_tokens": 0,
                  "outcome": "ok", "raw_path": "runs/<run_id>/cache/<key>.json"}],
   "run_id": "main", "repeat_idx": 1, "is_primary": true, "split": "test"
 }

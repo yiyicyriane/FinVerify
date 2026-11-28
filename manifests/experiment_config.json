@@ -1,15 +1,30 @@
 {
   "description": "FinVerify A/B/C/D experiment configuration. Fixed before the formal run; the runner refuses to run LLM versions on test filings unless frozen_prompts matches the current prompt files.",
-  "model": "claude-opus-5-5",
-  "effort": "medium",
-  "max_tokens": 16000,
-  "thinking": "adaptive; always on for this model and cannot be disabled, so version A is a single call with built-in hidden reasoning",
-  "sampling_parameters": "none sent: temperature/top_p/top_k are not accepted by this model (and temperature=0 never guaranteed identical outputs); reproducibility comes from fixed model/effort/max_tokens/prompt versions, saved raw outputs and repeats r1-r3",
-  "structured_outputs": "output_config.format json_schema on every structured step of every version; every object sets additionalProperties=false",
-  "refusal_fallback": "disabled: a server-side fallback would silently switch models mid-experiment; refusals are recorded as status=refusal",
+  "provider": "ollama",
+  "providers": {
+    "ollama": {
+      "model": "qwen3:8b",
+      "host": "http://127.0.0.1:11434",
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "max_tokens": 4096,
+      "think": false,
+      "timeout": 900,
+      "concurrency": 1,
+      "notes": "Free local model (no API key, no rate limits, data stays on the machine). Greedy decoding with a fixed seed. Thinking disabled for every version, so version A has no hidden reasoning: its only reasoning is the visible calculation_steps field. max_tokens is num_predict, identical for every step of every version."
+    },
+    "anthropic": {
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "max_tokens": 16000,
+      "api_max_retries": 4,
+      "concurrency": 4,
+      "notes": "Optional paid alternative, not used for the reported results. temperature/top_p/top_k are not accepted by this model; adaptive thinking cannot be disabled; no refusal fallback (it would switch models mid-experiment)."
+    }
+  },
+  "structured_outputs": "every structured step of every version is constrained to its JSON schema (Ollama: format; Anthropic: output_config.format) and validated again in code",
   "parse_retry_limit": 1,
-  "api_max_retries": 4,
-  "concurrency": 4,
   "ratios": ["current_ratio", "gross_profit_margin", "roa", "roe"],
   "versions": ["A", "B", "C", "C_tool", "D"],
   "repeats": [1, 2, 3],

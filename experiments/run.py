@@ -39,7 +39,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from agent import prompt_loader, version_a, version_b, version_c, version_c_tool, version_d
-from agent.llm_client import LLMClient
+from agent.llm_client import LLMClient, make_backend
 from agent.records import doc_meta
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -138,14 +138,16 @@ def parse_args(argv):
     p.add_argument("--repeats", default=None, help="comma-separated repeat indices (default: primary repeat)")
     p.add_argument("--resume", action="store_true", help="reopen an existing run_id and replay its cache")
     p.add_argument("--concurrency", type=int, default=None)
-    p.add_argument("--model", default=None, help="override config model (dev runs only)")
+    p.add_argument("--provider", default=None, help="override config provider: ollama | anthropic (dev runs only)")
+    p.add_argument("--model", default=None, help="override the provider's model (dev runs only)")
     p.add_argument("--skip-key-check", action="store_true", help="credentials come from an ant profile, not env vars")
     p.add_argument("--runs-dir", default=str(ROOT / "runs"), help=argparse.SUPPRESS)
     p.add_argument("--results-dir", default=str(ROOT / "results"), help=argparse.SUPPRESS)
     return p.parse_args(argv)
 
 
-def main(argv=None, sdk=None) -> int:
+def main(argv=None, backend=None) -> int:
+    """``backend`` lets tests inject a mock provider; normally it is built from the config."""
     args = parse_args(argv)
     config = load_json(CONFIG_PATH)
     versions = [v.strip() for v in args.versions.split(",") if v.strip()]
@@ -160,7 +162,8 @@ def main(argv=None, sdk=None) -> int:
     filing_ids = select_filings(args.filings, config, real, toys)
     docs = {**real, **toys}
     uses_llm = bool(LLM_VERSIONS & set(versions))
-    model = args.model or config["model"]
+    provider = args.provider or config["provider"]
+    overridden = (args.provider not in (None, config["provider"])) or args.model is not None
 
     # Guards ---------------------------------------------------------------
     run_dir = Path(args.runs_dir) / args.run_id
@@ -173,37 +176,35 @@ def main(argv=None, sdk=None) -> int:
         if config.get("frozen_prompts") != prompt_loader.all_versions():
             raise SystemExit("Prompts are not frozen (or changed since freezing). Develop on --filings dev,toy, "
                              "then run `python -m experiments.freeze_prompts` before touching test filings.")
-        if args.model and args.model != config["model"]:
-            raise SystemExit("--model override is only allowed on dev/toy filings.")
-    if uses_llm and sdk is None:
-        load_dotenv()
-        if not args.skip_key_check and not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
-            raise SystemExit("No ANTHROPIC_API_KEY found. Set it in your environment or in the gitignored .env "
-                             "file at the repo root (ANTHROPIC_API_KEY=...), never in code, "
-                             "or pass --skip-key-check if you use an `ant auth login` profile.")
+        if overridden:
+            raise SystemExit("--provider / --model overrides are only allowed on dev/toy filings.")
+    if uses_llm and backend is None:
+        backend = make_backend(config, args.provider, args.model)
+        if backend.provider == "anthropic":
+            load_dotenv()
+            if not args.skip_key_check and not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
+                raise SystemExit("No ANTHROPIC_API_KEY found. Set it in your environment or in the gitignored .env "
+                                 "file at the repo root (ANTHROPIC_API_KEY=...), never in code, "
+                                 "or pass --skip-key-check if you use an `ant auth login` profile.")
+        if hasattr(backend, "check_available"):
+            problem = backend.check_available()
+            if problem:
+                raise SystemExit(problem)
 
     run_dir.mkdir(parents=True, exist_ok=True)
-    llm = None
-    if uses_llm:
-        llm = LLMClient(run_dir / "cache", model=model, effort=config["effort"],
-                        max_tokens=config["max_tokens"], sdk=sdk, api_max_retries=config["api_max_retries"])
+    llm = LLMClient(run_dir / "cache", backend) if uses_llm else None
     ground_truth = version_d.load_ground_truth() if "D" in versions else {}
 
     meta_path = run_dir / "run_meta.json"
     run_meta = load_json(meta_path) if meta_path.exists() else {"run_id": args.run_id, "invocations": []}
-    try:
-        import anthropic
-        sdk_version = anthropic.__version__
-    except Exception:  # pragma: no cover
-        sdk_version = None
     run_meta["invocations"].append({
         "started_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "argv": argv if argv is not None else sys.argv[1:],
         "versions": versions, "filings": filing_ids, "ratios": ratios, "repeats": repeats,
-        "model": model, "effort": config["effort"], "max_tokens": config["max_tokens"],
+        "backend": backend.describe() if uses_llm else None,
         "prompt_versions": prompt_loader.all_versions(),
         "frozen_prompts": config.get("frozen_prompts"),
-        "anthropic_sdk": sdk_version, "python": platform.python_version(), "git": git_state(),
+        "python": platform.python_version(), "git": git_state(),
     })
     write_json(meta_path, run_meta)
 
@@ -238,7 +239,7 @@ def main(argv=None, sdk=None) -> int:
         return preds
 
     tasks = [(f, r, k) for k in repeats for f in filing_ids for r in ratios]
-    workers = args.concurrency or config["concurrency"]
+    workers = args.concurrency or config["providers"][provider].get("concurrency", 1)
     done = 0
     with ThreadPoolExecutor(max_workers=workers) as pool:
         for preds in pool.map(run_task, tasks):

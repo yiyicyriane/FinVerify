@@ -7,10 +7,10 @@ import unittest
 from pathlib import Path
 
 from agent import version_a, version_b, version_c, version_c_tool, version_d
-from agent.llm_client import LLMClient
 from agent.records import doc_meta
 from experiments import run as runner
-from tests.helpers import CLEANED_DIR, TOY_DIR, FakeSDK, answer_responder, load_json, not_found_responder
+from tests.helpers import (CLEANED_DIR, TOY_DIR, anthropic_backend, answer_responder, fake_llm, load_json,
+                           not_found_responder)
 
 
 def toy_docs():
@@ -26,8 +26,7 @@ class OfflineVersionTests(unittest.TestCase):
         self._tmp.cleanup()
 
     def llm(self, responder, name="cache"):
-        return LLMClient(self.tmp / name, model="mock-model", effort="medium", max_tokens=16000,
-                         sdk=FakeSDK(responder))
+        return fake_llm(self.tmp / name, responder)
 
     def test_d_equals_ground_truth_on_all_56_records(self):
         gt = version_d.load_ground_truth()
@@ -78,7 +77,7 @@ class OfflineVersionTests(unittest.TestCase):
         args = ["--run-id", "e2e", "--versions", "A,B,C,C_tool,D", "--filings", "toy",
                 "--runs-dir", str(self.tmp / "runs"), "--results-dir", str(self.tmp / "results"),
                 "--concurrency", "2"]
-        self.assertEqual(runner.main(args, sdk=FakeSDK(not_found_responder)), 0)
+        self.assertEqual(runner.main(args, backend=anthropic_backend(not_found_responder)), 0)
         lines = (self.tmp / "results" / "e2e" / "predictions.jsonl").read_text(encoding="utf-8").splitlines()
         preds = [json.loads(line) for line in lines]
         self.assertEqual(len(preds), 6 * 4 * 5)
@@ -86,11 +85,11 @@ class OfflineVersionTests(unittest.TestCase):
         self.assertTrue(all(p["status"] == "missing_input" for p in preds if p["version"] in ("A", "B", "C", "C_tool")))
         self.assertTrue((self.tmp / "runs" / "e2e" / "cache").is_dir())
         with self.assertRaises(SystemExit):  # same run_id again without --resume
-            runner.main(args, sdk=FakeSDK(not_found_responder))
+            runner.main(args, backend=anthropic_backend(not_found_responder))
         # --resume replays the cache: no API call at all
         def no_call(request):
             raise AssertionError("resume must replay from cache")
-        self.assertEqual(runner.main(args + ["--resume"], sdk=FakeSDK(no_call)), 0)
+        self.assertEqual(runner.main(args + ["--resume"], backend=anthropic_backend(no_call)), 0)
 
     def test_dotenv_loader_never_overrides_existing_variables(self):
         env_file = self.tmp / ".env"
@@ -112,7 +111,7 @@ class OfflineVersionTests(unittest.TestCase):
         with self.assertRaises(SystemExit):
             runner.main(["--run-id", "t", "--versions", "A", "--filings", "test",
                          "--runs-dir", str(self.tmp / "runs"), "--results-dir", str(self.tmp / "results")],
-                        sdk=FakeSDK(not_found_responder))
+                        backend=anthropic_backend(not_found_responder))
 
 
 if __name__ == "__main__":

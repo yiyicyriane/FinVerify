@@ -16,10 +16,9 @@ from pathlib import Path
 
 from agent import prompt_loader, version_a, version_b, version_c, version_c_tool
 from agent.leak_guard import find_leaks
-from agent.llm_client import LLMClient
 from agent.schemas import ratio_inputs
 from data.clean_filing import to_text
-from tests.helpers import CLEANED_DIR, ROOT, TOY_DIR, FakeSDK, load_json, not_found_responder
+from tests.helpers import CLEANED_DIR, ROOT, TOY_DIR, fake_llm, load_json, not_found_responder
 
 RATIOS = ["current_ratio", "gross_profit_margin", "roa", "roe"]
 
@@ -80,8 +79,7 @@ class RuntimeLeakageTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp, BlockGroundTruth():
             for module in (version_a, version_b, version_c, version_c_tool):
                 importlib.reload(module)  # import-time reads count too
-            llm = LLMClient(Path(tmp) / "cache", model="mock", effort="medium", max_tokens=16000,
-                            sdk=FakeSDK(not_found_responder))
+            llm = fake_llm(Path(tmp) / "cache", not_found_responder)
             for doc in docs:
                 for ratio in RATIOS:
                     version_a.run(doc, ratio, llm, 1)

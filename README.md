@@ -10,12 +10,13 @@ Design, commands and the predictions format for the analysis:
 
 ```bash
 pip install -r requirements.txt                    # Python >= 3.10
-python -m unittest discover -s tests -t .          # offline, no API key
+python -m unittest discover -s tests -t .          # offline, no model needed
 python -m experiments.run --run-id d-check --versions D --filings all,toy
 ```
 
-LLM versions need `ANTHROPIC_API_KEY` in your environment (never commit it).
-Raw responses are written to `runs/` (gitignored); compact predictions to `results/`.
+The LLM versions run on a free local model: install [Ollama](https://ollama.com)
+and `ollama pull qwen3:8b` (no API key, no cost). Raw responses are written to
+`runs/` (gitignored); compact predictions to `results/`.
 
 ## AI tool use
 

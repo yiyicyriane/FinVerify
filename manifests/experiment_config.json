@@ -25,15 +25,39 @@
   },
   "structured_outputs": "every structured step of every version is constrained to its JSON schema (Ollama: format; Anthropic: output_config.format) and validated again in code",
   "parse_retry_limit": 1,
-  "ratios": ["current_ratio", "gross_profit_margin", "roa", "roe"],
-  "versions": ["A", "B", "C", "C_tool", "D"],
-  "repeats": [1, 2, 3],
+  "ratios": [
+    "current_ratio",
+    "gross_profit_margin",
+    "roa",
+    "roe"
+  ],
+  "versions": [
+    "A",
+    "B",
+    "C",
+    "C_tool",
+    "D"
+  ],
+  "repeats": [
+    1,
+    2,
+    3
+  ],
   "primary_repeat": 1,
-  "dev_filings": ["AAPL_2025-09-27_10K"],
+  "dev_filings": [
+    "AAPL_2025-09-27_10K"
+  ],
   "dev_note": "Prompts are developed only on the toy filings and the dev filing. Headline results use the other 13 filings (52 records). AAPL_2026 is the same company as the dev filing, so a robustness row excluding all AAPL filings (12 filings, 48 records) is also reported.",
-  "robustness_exclude_companies": ["AAPL"],
-  "frozen_prompts": null,
-  "frozen_at": null,
+  "robustness_exclude_companies": [
+    "AAPL"
+  ],
+  "frozen_prompts": {
+    "a_direct": "a_direct.v1@126fb470",
+    "extract": "extract.v1@eee6edff",
+    "b_calc": "b_calc.v1@9e736310",
+    "c_tool": "c_tool.v1@9a651a6b"
+  },
+  "frozen_at": "2026-11-28T01:50:22+00:00",
   "proposed_metric_rules": {
     "status": "proposal, to be agreed with the analysis owner before the formal run",
     "denominator": "for every version, all ground-truth-available (filing x ratio) records of the split; identical across versions",

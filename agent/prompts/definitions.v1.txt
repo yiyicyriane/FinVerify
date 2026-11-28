@@ -7,6 +7,7 @@ Definitions (these define the reference answers; follow them exactly):
 - revenue is the company's total revenue for the year and cost_of_revenue is its total cost of revenue for the year, whatever the statement calls these lines.
 - equity is total stockholders' (shareholders') equity attributable to the parent company. Exclude noncontrolling interests.
 - net_income is net income attributable to the parent company, that is, after removing the share attributable to noncontrolling interests.
+- For each input, use the line that represents the whole item as defined above, not one of its components (for example, not retained earnings or an accumulated deficit). When stockholders' equity is negative, that line may be labeled a deficit.
 - Numbers shown in parentheses are negative.
 - Ratios are plain decimals with at least 4 significant digits (write 0.2500, not 25.00 or 25%).
 - If a required line item does not appear in the statements, mark it as not found and use null. Never estimate or invent a number.

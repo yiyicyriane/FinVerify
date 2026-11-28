@@ -174,6 +174,36 @@ Notes for the analysis:
 * Toy filings are synthetic (`experiments/toy_filings/`, answers in `expected.json`),
   for known-answer checks only.
 
+## Runs in `results/`
+
+| Run id | What | Use it for |
+|---|---|---|
+| `2026-11-26_D_pipeline_check` | D only, 14 real + 6 toy filings | building the Verifier before LLM results existed |
+| `dev-01` | all versions on the dev filing + toys, first prompt draft | prompt-development record only |
+| `dev-02` | same, after adding the "whole line, not a component" definition | prompt-development record only |
+| `2026-11-27_qwen3-8b_main` | **formal run**: all versions x 14 real + 6 toy filings, frozen prompts, r1 (primary) plus r2/r3 | all reported results (`is_primary == true` for the headline) |
+
+Model: `qwen3:8b` (Q4_K_M, digest `500a1f06...b41`, recorded in `run_meta.json`),
+Ollama 0.40.19, temperature 0, seed 42, thinking off. Prompts frozen at
+2026-11-28T01:50Z (`manifests/experiment_config.json`). r1 took 22 minutes on an
+RTX 4060 Laptop GPU and r2 + r3 another 43 minutes (fresh model calls, not cache
+replays), with no failures in any repeat (no parse failures, truncations or leaks).
+
+Run-to-run stability (r1 vs r2 vs r3, status + value + extracted items): B, C and
+C_tool 80/80 identical; A 79/80. The one difference is A's AAPL_2025 current ratio
+(0.8931 in r1, 0.8928 in r2/r3), so greedy decoding with a fixed seed is close to,
+but not exactly, deterministic on a GPU. Report r1 (`is_primary`) as the headline.
+
+Prompt development changed one thing: the dev run showed every LLM version
+taking the accumulated-deficit line as equity on the negative-equity toy, so a
+generic sentence was added to the shared definitions ("use the line that
+represents the whole item, not one of its components; when equity is negative
+that line may be labeled a deficit"). It did not change that toy's result
+(qwen3:8b still picks the component line), so the miss stays in the results as a
+genuine concept-mapping error. A also answers the toy without a cost-of-revenue
+line (using an unrelated expense line) where B/C correctly abstain; prompts were
+deliberately not tuned for that, since it is the behaviour being measured.
+
 ## Proposed metric rules (to agree before the formal run)
 
 * Same denominator for every version: all ground-truth-available (filing x ratio)

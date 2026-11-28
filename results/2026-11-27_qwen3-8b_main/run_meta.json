@@ -1,0 +1,95 @@
+{
+ "run_id": "2026-11-27_qwen3-8b_main",
+ "invocations": [
+  {
+   "started_at": "2026-11-28T01:50:35+00:00",
+   "argv": [
+    "--run-id",
+    "2026-11-27_qwen3-8b_main",
+    "--filings",
+    "all,toy",
+    "--repeats",
+    "1"
+   ],
+   "versions": [
+    "A",
+    "B",
+    "C",
+    "C_tool",
+    "D"
+   ],
+   "filings": [
+    "AAPL_2026-09-26_10K",
+    "AAPL_2025-09-27_10K",
+    "MSFT_2026-06-30_10K",
+    "MSFT_2025-06-30_10K",
+    "NVDA_2026-01-25_10K",
+    "NVDA_2025-01-26_10K",
+    "KO_2025-12-31_10K",
+    "KO_2024-12-31_10K",
+    "HD_2026-02-01_10K",
+    "HD_2025-02-02_10K",
+    "TSLA_2025-12-31_10K",
+    "TSLA_2024-12-31_10K",
+    "NKE_2026-05-31_10K",
+    "NKE_2025-05-31_10K",
+    "TOY-NCI_2025-12-31_10K",
+    "TOY-NEGEQ_2025-12-31_10K",
+    "TOY-NOCOGS_2025-12-31_10K",
+    "TOY-SIMPLE_2025-12-31_10K",
+    "TOY-THOUSANDS_2025-12-31_10K",
+    "TOY-ZEROCL_2025-12-31_10K"
+   ],
+   "ratios": [
+    "current_ratio",
+    "gross_profit_margin",
+    "roa",
+    "roe"
+   ],
+   "repeats": [
+    1
+   ],
+   "backend": {
+    "provider": "ollama",
+    "model": "qwen3:8b",
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 8192,
+    "max_tokens": 4096,
+    "think": false,
+    "server_version": "0.40.19",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "model_details": {
+     "parent_model": "",
+     "format": "gguf",
+     "family": "qwen3",
+     "families": [
+      "qwen3"
+     ],
+     "parameter_size": "8.2B",
+     "quantization_level": "Q4_K_M",
+     "context_length": 40960,
+     "embedding_length": 4096,
+     "runner": "ggml"
+    }
+   },
+   "prompt_versions": {
+    "a_direct": "a_direct.v1@126fb470",
+    "extract": "extract.v1@eee6edff",
+    "b_calc": "b_calc.v1@9e736310",
+    "c_tool": "c_tool.v1@9a651a6b"
+   },
+   "frozen_prompts": {
+    "a_direct": "a_direct.v1@126fb470",
+    "extract": "extract.v1@eee6edff",
+    "b_calc": "b_calc.v1@9e736310",
+    "c_tool": "c_tool.v1@9a651a6b"
+   },
+   "python": "3.13.1",
+   "git": {
+    "commit": "ea6986e650b724aaeb78d9f58e0c60498186b658",
+    "dirty": true
+   }
+  }
+ ]
+}
